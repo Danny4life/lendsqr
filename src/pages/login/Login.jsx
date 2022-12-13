@@ -9,7 +9,13 @@ const Login = () => {
     return ( 
         <div className="login">
             <div className="left">
-                <Logo />
+                <div className="left-logo">
+                    <div className="logo`">
+                        <Logo />
+                    </div>
+                    <h1 className="logo-text">lendsqr</h1>
+                </div>
+               
                 
             </div>
             <div className="right"></div>
