@@ -3,7 +3,7 @@
 
     .left {
         flex: 1;
-        background-color: #E5E5E5;
+        background-color: #FFFFFF;;
         height: 100vh;
         
         .left-logo{
@@ -21,6 +21,23 @@
         .logo-text{
             color: #213F7D;
         }
+
+        .login-img{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+
+            .img1 {
+                width: 600px;
+                height: 338px;
+                
+            }
+
+        }
+
+        
     }
 
     .right {
