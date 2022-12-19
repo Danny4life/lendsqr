@@ -42,6 +42,36 @@
 
     .right {
         flex: 1;
+
+        .right-container{
+
+            padding: 220px 0;
+
+            .welcome {
+                font-family: 'Avenir Next';
+                color: #213F7D;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 55px;
+                letter-spacing: -0.04em;
+                width: 183px;
+                height: 55px;
+            }
+
+            .details {
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                color: #545F7D;
+                width: 194px;
+                height: 28px;
+            }
+
+        }
+        
         
     }
 }

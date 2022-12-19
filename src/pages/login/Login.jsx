@@ -18,12 +18,19 @@ const Login = () => {
                 <div className="login-img">
                     <img className="img1" src={img1} alt="" />
                    
+                </div>    
+            </div>
+            <div className="right">
+                <div className="right-container">
+                    <h1 className="welcome">
+                        Welcome!
+                    </h1>
+                    <h4 className="details">
+                        Enter details to login.
+                    </h4>     
                 </div>
-               
-               
                 
             </div>
-            <div className="right"></div>
         </div>
      );
 }
