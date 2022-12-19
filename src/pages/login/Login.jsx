@@ -67,6 +67,13 @@ const Login = () => {
                             <FormInput key={input.id} {...input} values={values[input.name]}
                             onChnage={onChnage}  />
                         ))}
+                        <p className="show-container">
+                            <span className="show-item">show</span>
+                        </p>
+                        <div className="div-container">
+                            <span className="password">Forgot Password?</span>
+                            <button>LOG IN</button>
+                        </div>
                     </form>     
                 </div>
                 

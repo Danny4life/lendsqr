@@ -45,7 +45,7 @@
 
         .right-container{
 
-            padding: 220px 0;
+            padding: 180px 0;
 
             .welcome {
                 font-family: 'Avenir Next';
@@ -68,6 +68,74 @@
                 color: #545F7D;
                 width: 194px;
                 height: 28px;
+                margin-bottom: 40px;
+            }
+
+            .show-container {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                position: relative;
+               
+
+                .show-item {
+                    width: 49.41px;
+                    height: 12.5px;
+                    font-family: 'Avenir Next';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #39CDCC;
+                    position: absolute;
+                    top: -44px;
+                    left: 380px;
+                    cursor: pointer;
+                }
+            }
+
+            .div-container {
+                display: flex;
+                flex-direction: column;
+
+                .password {
+                    width: 147px;
+                    height: 17px;
+                    font-family: 'Avenir Next';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: right;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #39CDCC;
+                    cursor: pointer;
+                    margin-bottom: 25px;
+                    margin-top: 10px;
+                }
+
+                button {
+                    width: 447px;
+                    height: 48px;
+                    background: #39CDCC;
+                    border-radius: 8px;
+                    border: 1px solid #39CDCC ;
+                    font-family: 'Avenir Next';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    cursor: pointer;
+
+                }
             }
 
         }
