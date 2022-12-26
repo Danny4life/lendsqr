@@ -1,8 +1,12 @@
+import NavBar from "../../components/navbar/NavBar";
 import "./dashboard.scss"
 
 const Dashboard = () => {
     return ( 
-        <div className="dashboard"></div>
+        <div className="dashboard">
+            <NavBar />
+
+        </div>
      );
 }
  

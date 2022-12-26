@@ -18,3 +18,4 @@ test("Button element should be rendered", () => {
     const userButtonEl = screen.getByRole("button");
     expect(userButtonEl).toBeInTheDocument();
 })
+
