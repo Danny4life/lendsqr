@@ -1,3 +1,4 @@
+import SearchIcon from "../icon/SearchIcon";
 import Logo from "../logo/Logo";
 import "./navbar.scss"
 
@@ -9,6 +10,10 @@ const NavBar = () => {
                     <Logo />
                 </div>
                 <h1 className="logo-text">lendsqr</h1>
+                <div className="search">
+                    <input type="text" placeholder="Search for anything" />
+                    <button><SearchIcon /></button>
+                </div>
             </div> 
         </nav>
     

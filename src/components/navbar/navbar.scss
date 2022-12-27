@@ -20,4 +20,38 @@
             color: #213F7D;;
         }
     }
+
+    .search {
+
+        input {
+            width: 400px;
+            height: 40px;
+            background-color: #FFFFFF;
+            opacity: 0.2;
+            border: 1px solid #213F7D;
+            border-radius: 8px 0 0 8px; 
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #545F7D;
+            opacity: 0.7;
+            
+            } 
+
+            ::placeholder {
+                padding: 8px;
+              }
+
+
+              button {
+                width: 56px;
+                height: 40px;
+                background: #39CDCC;
+                border: 1px solid #39CDCC;
+                border-radius: 0 8px 8px 0; 
+                
+              }
+
+        }
+
 }
