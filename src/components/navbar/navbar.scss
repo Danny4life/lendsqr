@@ -1,0 +1,23 @@
+.navbar {
+    width: 100vw;
+    height: 100px;
+    background-color: #ffffff;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+
+    .left-logo {
+        display: flex;
+        gap: 8px;
+        
+        .logo {
+            display: flex;
+            width: 20.63px;
+            height: 20.84px;
+        }
+
+        .logo-text {
+            width: 115.37px;
+            height: 30px;
+            color: #213F7D;;
+        }
+    }
+}
