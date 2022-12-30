@@ -3,25 +3,34 @@
     height: 100px;
     background-color: #ffffff;
     box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    
 
     .left-logo {
         display: flex;
         gap: 8px;
+        align-items: center;
+        
         
         .logo {
             display: flex;
             width: 20.63px;
             height: 20.84px;
+            margin-left: 2rem;
+            align-items: center;
         }
 
         .logo-text {
             width: 115.37px;
             height: 30px;
-            color: #213F7D;;
+            color: #213F7D;
+            
         }
 
         .search {
-
+            margin-right: 32rem;
+            
             input {
                 width: 400px;
                 height: 40px;
@@ -48,12 +57,16 @@
                     background: #39CDCC;
                     border: 1px solid #39CDCC;
                     border-radius: 0 8px 8px 0; 
-                    
+                
                   }
     
             }
 
             .nav-items {
+
+                display: flex;
+                align-items: center;
+                gap: 15px;
             
                 .docs {
                     width: 37px;
@@ -64,6 +77,22 @@
                     width: 48px;
                     height: 48px;
                     border-radius: 50%;
+                }
+
+                .username {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    .nav-text {
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #213F7D;
+
+                    }
                 }
             }
     
