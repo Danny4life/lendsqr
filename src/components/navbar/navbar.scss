@@ -68,7 +68,9 @@
                 align-items: center;
                 gap: 15px;
 
-            
+                .notification {
+                    cursor: pointer;
+                }
             
                 .docs {
                     width: 37px;
