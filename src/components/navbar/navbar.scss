@@ -67,6 +67,8 @@
                 display: flex;
                 align-items: center;
                 gap: 15px;
+
+            
             
                 .docs {
                     width: 37px;
@@ -83,6 +85,19 @@
                     display: flex;
                     align-items: center;
                     gap: 5px;
+
+                    .nav-docs {
+                        font-family: 'Roboto';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        text-decoration-line: underline;
+                        color: #213F7D;
+                        text-decoration: none;
+
+
+                    }
 
                     .nav-text {
                         font-family: 'Work Sans';
