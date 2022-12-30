@@ -25,11 +25,16 @@
             width: 115.37px;
             height: 30px;
             color: #213F7D;
+           
             
         }
 
         .search {
-            margin-right: 32rem;
+            margin-right: 30rem;
+            // position: relative;
+            // left: 35px;
+            margin-left: 3rem;
+            
             
             input {
                 width: 400px;
@@ -43,12 +48,15 @@
                 line-height: 16px;
                 color: #545F7D;
                 opacity: 0.7;
+                padding: 0 12px;
+                
+              
                 
                 } 
     
-                ::placeholder {
-                    padding: 8px;
-                  }
+                // ::placeholder {
+                //     padding: 8px;
+                //   }
     
     
                   button {
@@ -57,6 +65,7 @@
                     background: #39CDCC;
                     border: 1px solid #39CDCC;
                     border-radius: 0 8px 8px 0; 
+                    cursor: pointer;
                 
                   }
     
