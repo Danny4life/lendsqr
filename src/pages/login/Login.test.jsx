@@ -23,6 +23,7 @@ test("should rendered logo text", () => {
     render(<Login />);
     const logoText = screen.getByTestId("logo-text");
     expect(logoText).toBeInTheDocument();
+    expect(logoText).toHaveTextContent("lendsqr");
    
 })
 
