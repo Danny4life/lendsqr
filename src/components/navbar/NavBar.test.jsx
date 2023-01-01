@@ -8,3 +8,10 @@ test("should rendered Navbar search input field", () => {
     expect(userSearchBar).toBeInTheDocument();
 })
 
+test("should rendered logo text", () => {
+    render(<NavBar />);
+    const navText = screen.getByTestId("logo-text");
+    expect(navText).toBeInTheDocument();
+    expect(navText).toHaveTextContent("lendsqr");
+   
+})

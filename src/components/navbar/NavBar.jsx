@@ -12,7 +12,7 @@ const NavBar = () => {
                 <div className="logo">
                     <Logo />
                 </div>
-                <h1 className="logo-text">lendsqr</h1>
+                <h1 data-testid="logo-text" className="logo-text">lendsqr</h1>
                 <div className="search">
                     <input type="text" placeholder="Search for anything" />
                     <button><SearchIcon /></button>
