@@ -19,3 +19,10 @@ test("Button element should be rendered", () => {
     expect(userButtonEl).toBeInTheDocument();
 })
 
+test("should rendered logo text", () => {
+    render(<Login />);
+    const logoText = screen.getByTestId("logo-text");
+    expect(logoText).toBeInTheDocument();
+   
+})
+

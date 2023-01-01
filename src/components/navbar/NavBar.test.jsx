@@ -8,9 +8,3 @@ test("should rendered Navbar search input field", () => {
     expect(userSearchBar).toBeInTheDocument();
 })
 
-test("should rendered Navbar logo text", () => {
-    render(<NavBar />);
-    const navbarLogoText = screen.getByText(/lendsqr/i);
-    expect(navbarLogoText).toBeInTheDocument();
-   
-})
