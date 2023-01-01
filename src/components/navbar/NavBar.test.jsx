@@ -15,3 +15,11 @@ test("should rendered logo text", () => {
     expect(navText).toHaveTextContent("lendsqr");
    
 })
+
+test("user button element should be rendered in Navbar component", () => {
+    render(<NavBar />);
+    const userBtnEl = screen.getByRole("button");
+    expect(userBtnEl).toBeInTheDocument();
+
+
+})
