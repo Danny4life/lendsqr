@@ -20,6 +20,10 @@ test("user button element should be rendered in Navbar component", () => {
     render(<NavBar />);
     const userBtnEl = screen.getByRole("button");
     expect(userBtnEl).toBeInTheDocument();
+})
 
-
+test("should rendered docs text", () => {
+    render(<NavBar />);
+    const docText = screen.getByTestId("doc");
+    expect(docText).toBeInTheDocument();
 })

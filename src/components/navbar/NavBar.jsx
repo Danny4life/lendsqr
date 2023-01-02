@@ -18,7 +18,7 @@ const NavBar = () => {
                     <button><SearchIcon /></button>
                 </div>
                 <div className="nav-items">
-                    <a href="/" className="nav-docs">Docs</a>
+                    <a data-testid="doc" href="/" className="nav-docs">Docs</a>
                     <div className="notification">
                         <NotificationIcon />
                     </div>
