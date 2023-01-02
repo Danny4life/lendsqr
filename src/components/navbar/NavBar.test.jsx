@@ -22,8 +22,8 @@ test("user button element should be rendered in Navbar component", () => {
     expect(userBtnEl).toBeInTheDocument();
 })
 
-test("should rendered docs text", () => {
+test("should rendered docs text link", () => {
     render(<NavBar />);
-    const docText = screen.getByTestId("doc");
-    expect(docText).toBeInTheDocument();
+    const docTextLink = screen.getByTestId("doc");
+    expect(docTextLink).toBeInTheDocument();
 })

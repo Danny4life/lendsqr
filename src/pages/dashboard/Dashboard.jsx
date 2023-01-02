@@ -7,9 +7,13 @@ const Dashboard = () => {
         <div className="dashboard">
             <NavBar />
             <div className="dashboard-container">
-                <SideBar />
+                <div className="left">
+                        <SideBar />
+                    </div>
+                    <div className="right">
+                        hello dashboard
+                    </div>
             </div>
-
         </div>
      );
 }
