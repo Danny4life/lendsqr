@@ -10,12 +10,6 @@
             position: relative;
             gap: 8px;
             cursor: pointer;
-           
-
-            .switchIcon {
-                //margin-left: 10px;
-               // margin-right: 50px;
-            }
 
             .switch-text {
                 font-family: 'Work Sans';
@@ -29,9 +23,10 @@
 
             .downArrowIcon {
                 display: flex;
-                align-items: center;
+                align-items: center;;
                 position: absolute;
                 right: 75px;
+                justify-content: center;
                 
             }
         }
