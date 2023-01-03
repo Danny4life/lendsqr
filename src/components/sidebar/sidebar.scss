@@ -3,6 +3,19 @@
     .sidebar-container {
 
         .switch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0;
+            position: relative;
+            gap: 8px;
+            cursor: pointer;
+           
+
+            .switchIcon {
+                //margin-left: 10px;
+               // margin-right: 50px;
+            }
 
             .switch-text {
                 font-family: 'Work Sans';
@@ -11,6 +24,15 @@
                 font-size: 16px;
                 line-height: 19px;
                 color: #213F7D;
+                margin-right: 48px;
+            }
+
+            .downArrowIcon {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 75px;
+                
             }
         }
     }
