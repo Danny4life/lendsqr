@@ -18,6 +18,7 @@ import ServiceIcon from "../icon/ServiceIcon";
 import ServiceAccountIcon from "../icon/ServiceAccountIcon";
 import SettlementIcon from "../icon/SettlementIcon";
 import ReportIccon from "../icon/ReportIcon";
+import PreferenceIcon from "../icon/PreferenceIcon";
 
 const SideBar = () => {
     return ( 
@@ -141,6 +142,13 @@ const SideBar = () => {
                         <ReportIccon />
                     </div>
                     <h4 className="sidebar-text">Reports</h4>
+                </div>
+                <h4 className="title">SETTINGS</h4>
+                <div className="sidebar-item">
+                    <div className="icon">
+                        <PreferenceIcon />
+                    </div>
+                    <h4 className="sidebar-text">Preferences</h4>
                 </div>
                 
                 
