@@ -20,11 +20,9 @@ const SideBar = () => {
                     <div className="switchIcon">
                         <DashboardIcon />
                     </div>
-                    <h4 className="switch-text">Switch Organization</h4>
-                    <div className="downArrowIcon">
-                        <DownArrowIcon />
-                    </div>
+                    <h4 className="switch-text">Dashboard</h4>
                 </div>
+                <h4 className="customer">CUSTOMERS</h4>
             </div>
            
         </div>
