@@ -7,6 +7,7 @@ import GaurantorIcon from "../icon/GaurantorIcon";
 import LoanIcon from "../icon/LoanIcon";
 import ModelIcon from "../icon/ModelIcon";
 import SavingsIcon from "../icon/SavingsIcon";
+import RequestIcon from "../icon/RequestIcon";
 
 const SideBar = () => {
     return ( 
@@ -57,6 +58,12 @@ const SideBar = () => {
                         <SavingsIcon />
                     </div>
                     <h4 className="switch-text">Savings</h4>
+                </div>
+                <div className="switch">
+                    <div className="switchIcon">
+                        <RequestIcon />
+                    </div>
+                    <h4 className="switch-text">Loan Requests</h4>
                 </div>
                 
             </div>
