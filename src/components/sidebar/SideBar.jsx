@@ -4,6 +4,7 @@ import DashboardIcon from "../icon/DashboardIcon";
 import "./sidebar.scss"
 import UserIcon from "../icon/UserIcon";
 import GaurantorIcon from "../icon/GaurantorIcon";
+import LoanIcon from "../icon/LoanIcon";
 
 const SideBar = () => {
     return ( 
@@ -37,6 +38,13 @@ const SideBar = () => {
                     </div>
                     <h4 className="switch-text">Gaurantors</h4>
                 </div>
+                <div className="switch">
+                    <div className="switchIcon">
+                        <LoanIcon />
+                    </div>
+                    <h4 className="switch-text">Loans</h4>
+                </div>
+                
             </div>
            
         </div>
