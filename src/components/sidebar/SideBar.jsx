@@ -11,6 +11,8 @@ import RequestIcon from "../icon/RequestIcon";
 import WhitelistIcon from "../icon/WhitelistIcon";
 import KarmaIcon from "../icon/KarmaIcon";
 import OrganizationIcon from "../icon/OrganizationIcon";
+import SavingsProductIcon from "../icon/SavingsProductIcon";
+import FeesIcon from "../icon/FeesIcon";
 
 const SideBar = () => {
     return ( 
@@ -92,6 +94,18 @@ const SideBar = () => {
                         <RequestIcon />
                     </div>
                     <h4 className="sidebar-text">Loan products</h4>
+                </div>
+                <div className="sidebar-item">
+                    <div className="icon">
+                        <SavingsProductIcon />
+                    </div>
+                    <h4 className="sidebar-text">Savings products</h4>
+                </div>
+                <div className="sidebar-item">
+                    <div className="icon">
+                        <FeesIcon />
+                    </div>
+                    <h4 className="sidebar-text">Fees and Charges</h4>
                 </div>
                 
             </div>
