@@ -2,6 +2,7 @@ import DownArrowIcon from "../icon/DownArrowIcon";
 import SwitchIcon from "../icon/SwitchIcon";
 import DashboardIcon from "../icon/DashboardIcon";
 import "./sidebar.scss"
+import UserIcon from "../icon/UserIcon";
 
 const SideBar = () => {
     return ( 
@@ -23,6 +24,12 @@ const SideBar = () => {
                     <h4 className="switch-text">Dashboard</h4>
                 </div>
                 <h4 className="customer">CUSTOMERS</h4>
+                <div className="switch users">
+                    <div className="switchIcon">
+                        <UserIcon />
+                    </div>
+                    <h4 className="switch-text">Users</h4>
+                </div>
             </div>
            
         </div>
