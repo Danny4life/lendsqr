@@ -10,76 +10,89 @@ import SavingsIcon from "../icon/SavingsIcon";
 import RequestIcon from "../icon/RequestIcon";
 import WhitelistIcon from "../icon/WhitelistIcon";
 import KarmaIcon from "../icon/KarmaIcon";
+import OrganizationIcon from "../icon/OrganizationIcon";
 
 const SideBar = () => {
     return ( 
         <div className="sidebar">
             <div className="sidebar-container">
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <SwitchIcon />
                     </div>
-                    <h4 className="switch-text">Switch Organization</h4>
+                    <h4 className="sidebar-text">Switch Organization</h4>
                     <div className="downArrowIcon">
                         <DownArrowIcon />
                     </div>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <DashboardIcon />
                     </div>
-                    <h4 className="switch-text">Dashboard</h4>
+                    <h4 className="sidebar-text">Dashboard</h4>
                 </div>
-                <h4 className="customer">CUSTOMERS</h4>
-                <div className="switch users">
-                    <div className="switchIcon">
+                <h4 className="title">CUSTOMERS</h4>
+                <div className="sidebar-item users">
+                    <div className="icon">
                         <UserIcon />
                     </div>
-                    <h4 className="switch-text">Users</h4>
+                    <h4 className="sidebar-text">Users</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <GaurantorIcon />
                     </div>
-                    <h4 className="switch-text">Gaurantors</h4>
+                    <h4 className="sidebar-text">Gaurantors</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <LoanIcon />
                     </div>
-                    <h4 className="switch-text">Loans</h4>
+                    <h4 className="sidebar-text">Loans</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <ModelIcon />
                     </div>
-                    <h4 className="switch-text">Decision Models</h4>
+                    <h4 className="sidebar-text">Decision Models</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <SavingsIcon />
                     </div>
-                    <h4 className="switch-text">Savings</h4>
+                    <h4 className="sidebar-text">Savings</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <RequestIcon />
                     </div>
-                    <h4 className="switch-text">Loan Requests</h4>
+                    <h4 className="sidebar-text">Loan Requests</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <WhitelistIcon />
                     </div>
-                    <h4 className="switch-text">Whitelist</h4>
+                    <h4 className="sidebar-text">Whitelist</h4>
                 </div>
-                <div className="switch">
-                    <div className="switchIcon">
+                <div className="sidebar-item">
+                    <div className="icon">
                         <KarmaIcon />
                     </div>
-                    <h4 className="switch-text">Karma</h4>
+                    <h4 className="sidebar-text">Karma</h4>
                 </div>
-                <h4 className="customer">BUSINESSES</h4>
+                <h4 className="title">BUSINESSES</h4>
+                <div className="sidebar-item">
+                    <div className="icon">
+                        <OrganizationIcon />
+                    </div>
+                    <h4 className="sidebar-text">Organization</h4>
+                </div>
+                <div className="sidebar-item">
+                    <div className="icon">
+                        <RequestIcon />
+                    </div>
+                    <h4 className="sidebar-text">Loan products</h4>
+                </div>
                 
             </div>
            
