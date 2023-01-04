@@ -3,6 +3,7 @@ import SwitchIcon from "../icon/SwitchIcon";
 import DashboardIcon from "../icon/DashboardIcon";
 import "./sidebar.scss"
 import UserIcon from "../icon/UserIcon";
+import GaurantorIcon from "../icon/GaurantorIcon";
 
 const SideBar = () => {
     return ( 
@@ -29,6 +30,12 @@ const SideBar = () => {
                         <UserIcon />
                     </div>
                     <h4 className="switch-text">Users</h4>
+                </div>
+                <div className="switch">
+                    <div className="switchIcon">
+                        <GaurantorIcon />
+                    </div>
+                    <h4 className="switch-text">Gaurantors</h4>
                 </div>
             </div>
            
