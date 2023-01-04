@@ -19,6 +19,7 @@ import ServiceAccountIcon from "../icon/ServiceAccountIcon";
 import SettlementIcon from "../icon/SettlementIcon";
 import ReportIccon from "../icon/ReportIcon";
 import PreferenceIcon from "../icon/PreferenceIcon";
+import PricingIcon from "../icon/PricingIcon";
 
 const SideBar = () => {
     return ( 
@@ -149,6 +150,12 @@ const SideBar = () => {
                         <PreferenceIcon />
                     </div>
                     <h4 className="sidebar-text">Preferences</h4>
+                </div>
+                <div className="sidebar-item">
+                    <div className="icon">
+                        <PricingIcon />
+                    </div>
+                    <h4 className="sidebar-text">Fees and Pricing</h4>
                 </div>
                 
                 
