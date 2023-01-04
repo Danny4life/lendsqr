@@ -5,6 +5,7 @@ import "./sidebar.scss"
 import UserIcon from "../icon/UserIcon";
 import GaurantorIcon from "../icon/GaurantorIcon";
 import LoanIcon from "../icon/LoanIcon";
+import ModelIcon from "../icon/ModelIcon";
 
 const SideBar = () => {
     return ( 
@@ -43,6 +44,12 @@ const SideBar = () => {
                         <LoanIcon />
                     </div>
                     <h4 className="switch-text">Loans</h4>
+                </div>
+                <div className="switch">
+                    <div className="switchIcon">
+                        <ModelIcon />
+                    </div>
+                    <h4 className="switch-text">Decision Models</h4>
                 </div>
                 
             </div>
