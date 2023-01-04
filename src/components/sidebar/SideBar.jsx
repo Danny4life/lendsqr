@@ -79,6 +79,7 @@ const SideBar = () => {
                     </div>
                     <h4 className="switch-text">Karma</h4>
                 </div>
+                <h4 className="customer">BUSINESSES</h4>
                 
             </div>
            
