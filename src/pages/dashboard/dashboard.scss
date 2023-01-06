@@ -14,6 +14,9 @@
 .right {
     flex: 4;
     background: #E5E5E5;
+    
+    
+    
 
     .user {
         font-family: 'Work Sans';
@@ -21,14 +24,21 @@
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;
-        width: 66px;
+        // width: 66px;
         color: #213F7D;
-        padding: 45px;
-        margin-left: 20px;
+        // padding: 45px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        margin-top: 40px;
     }
 
     .widgets {
 
+        display: flex;
+        margin-left: 50px;
+        gap: 30px;
+        
+        
         .box {
             width: 240px;
             height: 160px;
@@ -36,8 +46,7 @@
             border: 1px solid rgba(33, 63, 125, 0.06);
             box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
             border-radius: 4px;
-            margin-left: 60px;
-           
+            
 
             .box-items {
                 padding: 25px;
@@ -46,7 +55,7 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
-                background-color: pink;
+                // background-color: pink;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -61,7 +70,6 @@
                 line-height: 16px;
                 text-transform: uppercase;
                 color: #545F7D;
-                width: 47px;
                 margin-bottom: 13px;
 
             }
