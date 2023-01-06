@@ -1,3 +1,4 @@
+import WidgetIcon1 from "../../components/icon/WidgetIcon1";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import "./dashboard.scss"
@@ -11,7 +12,19 @@ const Dashboard = () => {
                         <SideBar />
                     </div>
                     <div className="right">
-                        hello dashboard
+                        <h1 className="user">Users</h1>
+
+                        <div className="widgets">
+                            <div className="box">
+                                <div className="box-items">
+                                <div className="widgetIcon">
+                                    <WidgetIcon1 />
+                                </div>
+
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
             </div>
         </div>

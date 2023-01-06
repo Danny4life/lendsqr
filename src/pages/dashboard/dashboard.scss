@@ -14,6 +14,47 @@
 .right {
     flex: 4;
     background: #E5E5E5;
+
+    .user {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        width: 66px;
+        color: #213F7D;
+        padding: 65px;
+    }
+
+    .widgets {
+
+        .box {
+            width: 240px;
+            height: 160px;
+            background: #FFFFFF;
+            border: 1px solid rgba(33, 63, 125, 0.06);
+            box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            margin-left: 60px;
+
+            .box-items {
+                padding: 25px;
+
+            .widgetIcon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: pink;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            }
+
+
+        }
+    }
     
 }
 
