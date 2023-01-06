@@ -17,9 +17,11 @@ const Dashboard = () => {
                         <div className="widgets">
                             <div className="box">
                                 <div className="box-items">
-                                <div className="widgetIcon">
-                                    <WidgetIcon1 />
-                                </div>
+                                    <div className="widgetIcon">
+                                        <WidgetIcon1 />
+                                    </div>
+                                    <h4 className="widget-users">Users</h4>
+                                    <h1 className="widget-users-figure">2,453</h1>
 
                                 </div>
                                 

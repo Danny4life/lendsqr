@@ -23,7 +23,8 @@
         line-height: 28px;
         width: 66px;
         color: #213F7D;
-        padding: 65px;
+        padding: 45px;
+        margin-left: 20px;
     }
 
     .widgets {
@@ -36,6 +37,7 @@
             box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
             border-radius: 4px;
             margin-left: 60px;
+           
 
             .box-items {
                 padding: 25px;
@@ -48,6 +50,32 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-bottom: 15px;
+            }
+
+            .widget-users {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #545F7D;
+                width: 47px;
+                margin-bottom: 13px;
+
+            }
+
+            .widget-users-figure {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                text-transform: uppercase;
+                width: 64px;
+                color: #213F7D;
+
             }
 
             }
