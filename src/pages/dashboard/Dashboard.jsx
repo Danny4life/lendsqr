@@ -1,3 +1,4 @@
+import DashboardTable from "../../components/dashboardTable/DashboardTable";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import Widget from "../../components/widget/Widget";
@@ -19,13 +20,19 @@ const Dashboard = () => {
                 </div>
               
                 <div className="right">
-                    <section>
+                    <section className="widget-section">
                         <h1 className="user">Users</h1>
                         <div className="widgets">
                             <Widget type="users" />
                             <Widget type="active" />
                             <Widget type="loan" />
                             <Widget type="savings" />
+                        </div>
+                    </section>
+
+                    <section>
+                        <div className="tableContainer">
+                            <DashboardTable />
                         </div>
                     </section>
                 </div>
