@@ -1,9 +1,9 @@
 .login {
     display: flex;
 
-    .left {
+    .login-left {
         flex: 1;
-        background-color: #FFFFFF;;
+        background: #f8f8f8;
         height: 100vh;
         
         .left-logo{
@@ -40,12 +40,13 @@
         
     }
 
-    .right {
+    .login-right {
         flex: 1;
 
         .right-container{
 
             padding: 180px 0;
+            margin-left: 7rem;
 
             .welcome {
                 font-family: 'Avenir Next';

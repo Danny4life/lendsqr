@@ -41,7 +41,7 @@ const Login = () => {
     }
     return ( 
         <div className="login">
-            <div className="left">
+            <div className="login-left">
                 <div className="left-logo">
                     <div className="logo`">
                         <Logo />
@@ -53,7 +53,7 @@ const Login = () => {
                    
                 </div>    
             </div>
-            <div className="right">
+            <div className="login-right">
                 <div className="right-container">
                     <h1 className="welcome">
                         Welcome!
