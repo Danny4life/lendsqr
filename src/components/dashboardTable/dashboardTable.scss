@@ -1,0 +1,29 @@
+.table {
+
+    .status {
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Inactive {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+
+            text-align: center;
+            color: gray;
+            background: #545F7D;
+        }
+
+        &.Active {
+            color: green;
+            background-color: rgba( 0, 128, 0, 0.151);
+        }
+
+        &.Pending {
+            color: goldenrod;
+            background-color: rgba( 189, 189, 3, 0.103);
+        }
+    }
+}
