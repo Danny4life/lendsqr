@@ -6,21 +6,31 @@ import "./dashboard.scss"
 const Dashboard = () => {
     return ( 
         <div className="dashboard">
-            <NavBar />
+            <header>
+                <NavBar />
+            </header>
+           
             <div className="dashboard-container">
                 <div className="left">
+                    <aside>
                         <SideBar />
+                    </aside>
+                       
                 </div>
+              
                 <div className="right">
-                    <h1 className="user">Users</h1>
-                    <div className="widgets">
-                        <Widget type="users" />
-                        <Widget type="active" />
-                        <Widget type="loan" />
-                        <Widget type="savings" />
-                    </div>
+                    <section>
+                        <h1 className="user">Users</h1>
+                        <div className="widgets">
+                            <Widget type="users" />
+                            <Widget type="active" />
+                            <Widget type="loan" />
+                            <Widget type="savings" />
+                        </div>
+                    </section>
                 </div>
             </div>
+
         </div>
      );
 }
