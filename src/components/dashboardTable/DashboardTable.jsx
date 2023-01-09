@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import FilterList from "../icon/FilterListIcon";
 
 
 const DashboardTable = () => {
@@ -69,12 +70,12 @@ const DashboardTable = () => {
           status: "Pending",
         },
         {
-            id: "Lendsqr",
-            username: "Tosin Dokunmu",
-            email: "Adedeji@gmail.com",
-            phone: "08012345678",
-            date:  "July 15, 2020 11:30AM",
-            status: "Active",
+          id: "Lendsqr",
+          username: "Tosin Dokunmu",
+          email: "Adedeji@gmail.com",
+          phone: "08012345678",
+          date:  "July 15, 2020 11:30AM",
+          status: "Active",
 
 
         },
@@ -145,12 +146,31 @@ const DashboardTable = () => {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell className="tableRow">ORGANIZATION</TableCell>
-              <TableCell className="tableRow">USERNAME</TableCell>
-              <TableCell className="tableRow">EMAIL</TableCell>
-              <TableCell className="tableRow">PHONE NUMBER</TableCell>
-              <TableCell className="tableRow">DATE JOINED</TableCell>
-              <TableCell className="tableRow">STATUS</TableCell>   
+              <TableCell className="tableRow row">
+                ORGANIZATION
+                <span><FilterList /> </span>
+              </TableCell>
+              
+              <TableCell className="tableRow row">
+                USERNAME
+                <span><FilterList /> </span>
+              </TableCell>
+              <TableCell className="tableRow row">
+                EMAIL
+                <span><FilterList /> </span>
+              </TableCell>
+              <TableCell className="tableRow row">
+                PHONE NUMBER
+                <span><FilterList /> </span>
+              </TableCell>
+              <TableCell className="tableRow row">
+                DATE JOINED
+                <span><FilterList /> </span>
+              </TableCell>
+              <TableCell className="tableRow row">
+                STATUS
+                <span><FilterList /> </span>
+              </TableCell>   
             </TableRow>
           </TableHead>
           <TableBody>
