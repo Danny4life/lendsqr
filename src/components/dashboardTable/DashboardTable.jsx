@@ -22,7 +22,7 @@ const DashboardTable = () => {
         {
           id: "Irorun",
           username: "Debby Ogana",
-          email: "Adedeji@gmail.com",
+          email: "debby2@gmail.com",
           phone: "08012345678",
           date:  "April 30, 2020 10:00AM",
           status: "Pending",
@@ -30,7 +30,7 @@ const DashboardTable = () => {
         {
           id: "Lendstar",
           username: "Grace Effiom",
-          email: "Adedeji@gmail.com",
+          email: "Geffiom@gmail.com",
           phone: "08012345678",
           date:  "April 30, 2020 10:00AM",
           status: "Pending",
@@ -38,7 +38,7 @@ const DashboardTable = () => {
         {
           id: "Lendsqr",
           username: "Tosin Dokunmu",
-          email: "JAdedeji@gmail.com",
+          email: "dokunmu.tosin@gmail.com",
           phone: "08012345678",
           date:  "April 10, 2020 9:00AM",
           status: "Active",
@@ -46,7 +46,7 @@ const DashboardTable = () => {
         {
           id: "Lendstar",
           username: "Grace Effiom",
-          email: "HAdedeji@gmail.coml",
+          email: "Geffiom@gmail.com",
           phone: "08012345678",
           date:  "April 10, 2020 9:00AM",
           status: "Pending",
@@ -141,40 +141,35 @@ const DashboardTable = () => {
 
 
     return ( 
-        <TableContainer component={Paper} className="table">
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell className="tableCell">ORGANIZATION</TableCell>
-            <TableCell className="tableCell">USERNAME</TableCell>
-            <TableCell className="tableCell">EMAIL</TableCell>
-            <TableCell className="tableCell">PHONE NUMBER</TableCell>
-            <TableCell className="tableCell">DATE JOINED</TableCell>
-            <TableCell className="tableCell">STATUS</TableCell> 
-            {/* <TableCell className="tableCell">STATUS</TableCell>
-             */}
-            {/* <TableCell className="tableCell">Payment Method</TableCell> */}
-            
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell className="tableCell">{row.id}</TableCell>
-              <TableCell className="tableCell">{row.username}</TableCell>
-              <TableCell className="tableCell">{row.email}</TableCell>
-              <TableCell className="tableCell">{row.phone}</TableCell>
-              <TableCell className="tableCell">{row.date}</TableCell> 
-              {/* <TableCell className="tableCell">{row.method}</TableCell> */}
-                <TableCell className="tableCell">
-                        <span className={`status ${row.status}`}>
-                                    {row.status}
-                        </span>
-                </TableCell>
+      <TableContainer component={Paper} className="table">
+        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell className="tableCell">ORGANIZATION</TableCell>
+              <TableCell className="tableCell">USERNAME</TableCell>
+              <TableCell className="tableCell">EMAIL</TableCell>
+              <TableCell className="tableCell">PHONE NUMBER</TableCell>
+              <TableCell className="tableCell">DATE JOINED</TableCell>
+              <TableCell className="tableCell">STATUS</TableCell>   
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow key={row.id}>
+                <TableCell className="tableCell">{row.id}</TableCell>
+                <TableCell className="tableCell">{row.username}</TableCell>
+                <TableCell className="tableCell">{row.email}</TableCell>
+                <TableCell className="tableCell">{row.phone}</TableCell>
+                <TableCell className="tableCell">{row.date}</TableCell> 
+                <TableCell className="tableCell">
+                      <span className={`status ${row.status}`}>
+                          {row.status}
+                      </span>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
     </TableContainer>
     
      );
