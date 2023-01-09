@@ -145,12 +145,12 @@ const DashboardTable = () => {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell className="tableCell">ORGANIZATION</TableCell>
-              <TableCell className="tableCell">USERNAME</TableCell>
-              <TableCell className="tableCell">EMAIL</TableCell>
-              <TableCell className="tableCell">PHONE NUMBER</TableCell>
-              <TableCell className="tableCell">DATE JOINED</TableCell>
-              <TableCell className="tableCell">STATUS</TableCell>   
+              <TableCell className="tableRow">ORGANIZATION</TableCell>
+              <TableCell className="tableRow">USERNAME</TableCell>
+              <TableCell className="tableRow">EMAIL</TableCell>
+              <TableCell className="tableRow">PHONE NUMBER</TableCell>
+              <TableCell className="tableRow">DATE JOINED</TableCell>
+              <TableCell className="tableRow">STATUS</TableCell>   
             </TableRow>
           </TableHead>
           <TableBody>
