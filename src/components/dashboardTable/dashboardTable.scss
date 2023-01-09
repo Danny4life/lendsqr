@@ -11,20 +11,42 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 16px;
-
             text-align: center;
             color: gray;
-            background: #545F7D;
+            background: #c9ceda;
         }
 
         &.Active {
             color: green;
             background-color: rgba( 0, 128, 0, 0.151);
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
         }
 
         &.Pending {
             color: goldenrod;
             background-color: rgba( 189, 189, 3, 0.103);
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
+
+        &.Blacklisted {
+            color: #E4033B;;
+            background-color: rgb(235, 201, 210);
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
         }
     }
 

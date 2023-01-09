@@ -50,7 +50,7 @@ const DashboardTable = () => {
           email: "Geffiom@gmail.com",
           phone: "08012345678",
           date:  "April 10, 2020 9:00AM",
-          status: "Pending",
+          status: "Blacklisted",
         },
         {
             id: "Lendsqr",
@@ -85,7 +85,7 @@ const DashboardTable = () => {
           email: "Adedeji@gmail.com",
           phone: "08012345678",
           date:  "July 15, 2020 11:30AM",
-          status: "Pending",
+          status: "Blacklisted",
 
         },
 
