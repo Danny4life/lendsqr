@@ -1,3 +1,41 @@
 .dataTable {
-    height: 640px;
+    height: 820px;
+
+
+   .datagrid  {
+    color:  #545F7D;
+    font-family: 'Work Sans';
+    font-style: normal;
+   }
+
+
+   .cellWithStatus {
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    &.Inactive {
+        background-color: rgba(0, 128, 0, 0.05);
+        color: gray;
+    }
+
+    &.Active {
+        background-color: rgba(0, 128, 0, 0.05);
+        color: green;
+    }
+
+    &.Blacklisted {
+        background-color: rgba(255, 0, 0, 0.05);
+        color: crimson;
+    }
+}
+
+.cellCol {
+    color: red;
+}
 }
