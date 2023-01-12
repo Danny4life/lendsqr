@@ -1,7 +1,10 @@
-import DashboardTable from "../../components/dashboardTable/DashboardTable";
+//import DashboardTable from "../../components/dashboardTable/DashboardTable";
+import DataTable from "../../components/datatable/DataTable";
 import NavBar from "../../components/navbar/NavBar";
+//import PaginationTable from "../../components/pagination/PaginationTable";
 import SideBar from "../../components/sidebar/SideBar";
 import Widget from "../../components/widget/Widget";
+
 import "./dashboard.scss"
 
 const Dashboard = () => {
@@ -32,8 +35,12 @@ const Dashboard = () => {
 
                     <section>
                         <div className="tableContainer">
-                            <DashboardTable />
+                            {/* <DashboardTable /> */}
+                            <DataTable />
                         </div>
+
+                        
+                        
                     </section>
                 </div>
             </div>

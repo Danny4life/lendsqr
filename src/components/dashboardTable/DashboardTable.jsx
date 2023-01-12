@@ -7,7 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import FilterList from "../icon/FilterListIcon";
-import TablePagination from "../pagination/TablePagination";
+
 
 
 const DashboardTable = () => {
@@ -194,8 +194,6 @@ const DashboardTable = () => {
           </TableBody>
         </Table>
     </TableContainer>
-
-    <TablePagination />
     </>
     
      );
