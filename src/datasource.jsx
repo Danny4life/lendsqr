@@ -29,11 +29,7 @@ export const userColumns = [
         }
     },
    
-]
-
-
-
-
+];
 
 export const userRows = [
     {
