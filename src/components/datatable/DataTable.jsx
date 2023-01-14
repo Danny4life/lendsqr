@@ -6,7 +6,7 @@ import { userColumns, userRows } from "../../datasource";
 const DataTable = () => {
 
     return ( 
-        <div className="dataTable">
+        <section className="dataTable">
           <DataGrid
           className="datagrid"
           rows={userRows}
@@ -15,7 +15,7 @@ const DataTable = () => {
           rowsPerPageOptions={[12]}
           checkboxSelection
       />
-        </div>
+        </section>
      );
 }
  
