@@ -8,3 +8,10 @@ test("dashboard page should rendered user text", ()=> {
     expect(userText).toBeInTheDocument();
     expect(userText).toHaveTextContent("Users");
 })
+
+test("dashboard page should rendered widget", ()=> {
+    render(<Dashboard />);
+    const widget = screen.getByTestId("widgets");
+    expect(widget).toBeInTheDocument();
+    
+})

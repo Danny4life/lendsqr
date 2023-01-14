@@ -23,7 +23,7 @@ const Dashboard = () => {
                 <section className="right">
                     <section className="widget-section">
                         <h1 data-testid="user-text" className="user">Users</h1>
-                        <div className="widgets">
+                        <div data-testid="widgets" className="widgets">
                             <Widget type="users" />
                             <Widget type="active" />
                             <Widget type="loan" />
