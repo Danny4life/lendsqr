@@ -37,23 +37,22 @@ const Login = () => {
 
     const onChnage = (e) => {
         setValues({...values, [e.target.name] : e.target.value});
-        //console.log(values);
     }
     return ( 
-        <div className="login">
-            <div className="login-left">
-                <div className="left-logo">
-                    <div className="logo`">
+        <section className="login">
+            <section className="login-left">
+                <header className="left-logo">
+                    <div className="logo">
                         <Logo />
                     </div>
                     <h1 data-testid="logo-text" className="logo-text">lendsqr</h1>
-                </div>
+                </header>
                 <div className="login-img">
                     <img className="img1" src={img1} alt="" />
                    
                 </div>    
-            </div>
-            <div className="login-right">
+            </section>
+            <section className="login-right">
                 <div className="right-container">
                     <h1 className="welcome">
                         Welcome!
@@ -77,8 +76,8 @@ const Login = () => {
                     </form>     
                 </div>
                 
-            </div>
-        </div>
+            </section>
+        </section>
      );
 }
  
