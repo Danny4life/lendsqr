@@ -8,9 +8,9 @@ import "./dashboard.scss"
 const Dashboard = () => {
     return ( 
         <section className="dashboard">
-            <header>
+            <nav>
                 <NavBar />
-            </header>
+            </nav>
            
             <section className="dashboard-container">
                 <div className="left">
@@ -22,7 +22,7 @@ const Dashboard = () => {
               
                 <section className="right">
                     <section className="widget-section">
-                        <h1 className="user">Users</h1>
+                        <h1 data-testid="user-text" className="user">Users</h1>
                         <div className="widgets">
                             <Widget type="users" />
                             <Widget type="active" />
