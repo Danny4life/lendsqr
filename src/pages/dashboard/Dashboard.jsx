@@ -20,7 +20,7 @@ const Dashboard = () => {
                        
                 </div>
               
-                <section className="right">
+                <div className="right">
                     <section className="widget-section">
                         <h1 data-testid="user-text" className="user">Users</h1>
                         <div data-testid="widgets" className="widgets">
@@ -36,7 +36,7 @@ const Dashboard = () => {
                             <DataTable />
                         </div>   
                     </section>
-                </section>
+                </div>
             </section>
         </section>
      );

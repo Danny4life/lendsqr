@@ -1,0 +1,19 @@
+.userpage {
+
+    .user-container{
+        display: flex;
+    }
+
+    .left {
+        flex: 1;
+        width: 283px;
+        height: 1695px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+    }
+
+        .right {
+            flex: 4;
+            background: #E5E5E5;
+    }
+}
