@@ -23,8 +23,9 @@ import PricingIcon from "../icon/PricingIcon";
 import AuditIcon from "../icon/AuditIcon";
 
 const SideBar = () => {
+    
     return ( 
-        <div className="sidebar">
+        <aside className="sidebar">
             <div className="sidebar-container">
                 <div className="sidebar-item">
                     <div className="icon">
@@ -168,7 +169,7 @@ const SideBar = () => {
                 
             </div>
            
-        </div>
+        </aside>
      );
 }
  

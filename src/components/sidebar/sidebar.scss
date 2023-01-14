@@ -15,7 +15,7 @@
                 font-family: 'Work Sans';
                 width: 157px;
                 font-weight: 400;
-                font-size: 16px;
+                font-size: 1rem;
                 line-height: 19px;
                 color: #213F7D;
                 margin-right: 48px;
@@ -23,11 +23,10 @@
 
             .downArrowIcon {
                 display: flex;
-                align-items: center;;
+                align-items: center;
                 position: absolute;
                 right: 75px;
-                justify-content: center;
-                
+                justify-content: center;      
             }
         }
 
@@ -35,7 +34,7 @@
             font-family: 'Work Sans';
             font-style: normal;
             font-weight: 500;
-            font-size: 12px;
+            font-size: 0.75rem;
             line-height: 14px;
             color: #545F7D;
             margin-left: 30px;
@@ -47,8 +46,6 @@
             width: 287px;
             height: 40px;
             background: #39CDCC;
-            //opacity: 0.02;
-            
         }
     }
     
