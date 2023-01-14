@@ -1,7 +1,5 @@
-//import DashboardTable from "../../components/dashboardTable/DashboardTable";
 import DataTable from "../../components/datatable/DataTable";
 import NavBar from "../../components/navbar/NavBar";
-//import PaginationTable from "../../components/pagination/PaginationTable";
 import SideBar from "../../components/sidebar/SideBar";
 import Widget from "../../components/widget/Widget";
 
@@ -9,12 +7,12 @@ import "./dashboard.scss"
 
 const Dashboard = () => {
     return ( 
-        <div className="dashboard">
+        <section className="dashboard">
             <header>
                 <NavBar />
             </header>
            
-            <div className="dashboard-container">
+            <section className="dashboard-container">
                 <div className="left">
                     <aside>
                         <SideBar />
@@ -22,7 +20,7 @@ const Dashboard = () => {
                        
                 </div>
               
-                <div className="right">
+                <section className="right">
                     <section className="widget-section">
                         <h1 className="user">Users</h1>
                         <div className="widgets">
@@ -35,17 +33,12 @@ const Dashboard = () => {
 
                     <section>
                         <div className="tableContainer">
-                            {/* <DashboardTable /> */}
                             <DataTable />
-                        </div>
-
-                        
-                        
+                        </div>   
                     </section>
-                </div>
-            </div>
-
-        </div>
+                </section>
+            </section>
+        </section>
      );
 }
  
