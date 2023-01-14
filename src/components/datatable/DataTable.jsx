@@ -7,13 +7,13 @@ const DataTable = () => {
 
     return ( 
         <div className="dataTable">
-        <DataGrid
-        className="datagrid"
-        rows={userRows}
-        columns={ userColumns}
-        pageSize={12}
-        rowsPerPageOptions={[12]}
-        checkboxSelection
+          <DataGrid
+          className="datagrid"
+          rows={userRows}
+          columns={ userColumns}
+          pageSize={12}
+          rowsPerPageOptions={[12]}
+          checkboxSelection
       />
         </div>
      );
