@@ -24,14 +24,13 @@ const NavBar = () => {
                     </div>
                     <div className="username">
                         <img className="img1" src={img1} alt="img" />
+                        {/* <div className="img1"></div> */}
                         <span className="nav-text">John Doe</span>
                         <span><ArrowDropDownIcon /></span>
-                    </div>
-                   
+                    </div>  
                 </div>
             </div> 
         </nav>
-    
      );
 }
  
