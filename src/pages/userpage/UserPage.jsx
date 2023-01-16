@@ -1,6 +1,8 @@
+import DashboardTable from "../../components/dashboardTable/DashboardTable";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import Widget from "../../components/widget/Widget";
+//import DataTable from "../../components/datatable/DataTable";
 import "./userpage.scss"
 
 const userPage = () => {
@@ -25,6 +27,13 @@ const userPage = () => {
                             <Widget type="savings" />
                         </div>
 
+                    </section>
+
+                    <section>
+                        <div className="userTableContainer">
+                            {/* <DataTable /> */}
+                            <DashboardTable />
+                        </div>   
                     </section>
                 </div>
            </section>

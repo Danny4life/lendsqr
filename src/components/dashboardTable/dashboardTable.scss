@@ -1,81 +1,81 @@
 .table {
   
 
-    // .status {
-    //     padding: 5px;
-    //     border-radius: 5px;
+    .status {
+        padding: 5px;
+        border-radius: 5px;
 
-    //     &.Inactive {
-    //         font-family: 'Work Sans';
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         font-size: 14px;
-    //         line-height: 16px;
-    //         text-align: center;
-    //         color: gray;
-    //         background: #c9ceda;
-    //     }
+        &.Inactive {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: gray;
+            background: #c9ceda;
+        }
 
-    //     &.Active {
-    //         color: green;
-    //         background-color: rgba( 0, 128, 0, 0.151);
-    //         font-family: 'Work Sans';
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         font-size: 14px;
-    //         line-height: 16px;
-    //         text-align: center;
-    //     }
+        &.Active {
+            color: green;
+            background-color: rgba( 0, 128, 0, 0.151);
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
 
-    //     &.Pending {
-    //         color: goldenrod;
-    //         background-color: rgba( 189, 189, 3, 0.103);
-    //         font-family: 'Work Sans';
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         font-size: 14px;
-    //         line-height: 16px;
-    //         text-align: center;
-    //     }
+        &.Pending {
+            color: goldenrod;
+            background-color: rgba( 189, 189, 3, 0.103);
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
 
-    //     &.Blacklisted {
-    //         color: #E4033B;;
-    //         background-color: rgb(235, 201, 210);
-    //         font-family: 'Work Sans';
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         font-size: 14px;
-    //         line-height: 16px;
-    //         text-align: center;
-    //     }
-    // }
+        &.Blacklisted {
+            color: #E4033B;;
+            background-color: rgb(235, 201, 210);
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+        }
+    }
 
-    //  .tableRow {
-    //     font-family: 'Work Sans';
-    //     font-style: normal;
-    //     font-weight: 600;
-    //     font-size: 12px;
-    //     line-height: 14px;
-    //     text-transform: uppercase;
-    //     color: #545F7D;
-    //  }
+     .tableRow {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #545F7D;
+     }
 
-    //  .row > span {
-    //     cursor: pointer;
-    //     position: relative;
-    //     top: 5px;
-    //     left: 8px;
+     .row > span {
+        cursor: pointer;
+        position: relative;
+        top: 5px;
+        left: 8px;
         
         
-    //  }
+     }
 
-    //  .tableCell {
-    //     font-family: 'Work Sans';
-    //     font-style: normal;
-    //     font-weight: 400;
-    //     font-size: 14px;
-    //     line-height: 16px;
-    //     color: #545F7D;
-    //  }
+     .tableCell {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #545F7D;
+     }
 
 }
