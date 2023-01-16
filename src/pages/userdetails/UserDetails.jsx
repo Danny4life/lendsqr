@@ -1,10 +1,13 @@
+import NavBar from "../../components/navbar/NavBar";
 import "./userdetails.scss"
 
 const UserDetails = () => {
     return ( 
-        <div className="userdetails">
-            userdetails
-        </div>
+        <section className="userdetails">
+           <nav>
+             <NavBar />
+           </nav>
+        </section>
      );
 }
  
