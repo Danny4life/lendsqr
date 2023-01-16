@@ -15,5 +15,70 @@
         .right {
             flex: 4;
             background: #E5E5E5;
+
+
+        .user {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 28px;
+            color: #213F7D;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+
+        .widgets {
+            display: flex;
+            margin-left: 50px;
+            gap: 30px;
+
+            .box {
+                width: 240px;
+                height: 160px;
+                background: #FFFFFF;
+                border: 1px solid rgba(33, 63, 125, 0.06);
+                box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+                border-radius: 4px;
+
+                .box-items {
+                    padding: 25px;
+
+                    .widgetIcon {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 15px;
+                    }
+
+                    .widget-title {
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                        color: #545F7D;
+                        margin-bottom: 13px;
+                    }
+
+                    .widget-total {
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        width: 64px;
+                        color: #213F7D;
+                    }
+        
+                }
+            }
+        }
     }
 }
