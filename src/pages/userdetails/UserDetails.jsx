@@ -1,11 +1,12 @@
 import ArrocwIcon from "../../components/icon/ArrowIcon";
+import Avatar from "../../components/icon/AvatarIcon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import "./userdetails.scss"
 
 const UserDetails = () => {
     return ( 
-        <section className="userdetails">
+        <div className="userdetails">
            <nav>
              <NavBar />
            </nav>
@@ -33,14 +34,16 @@ const UserDetails = () => {
                             </div>
                         </div>
                         <div className="user-detail-container">
-
+                            <div>
+                                <Avatar />
+                            </div>
                         </div>
                     </section>
                     
                 </div>
 
            </section>
-        </section>
+        </div>
      );
 }
  
