@@ -152,6 +152,36 @@
                 }
              
             }
+
+            .users-general-details{
+                display: flex;
+                justify-content: space-around;
+
+                .details {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 1.188rem;
+                    text-align: center;
+                    cursor: pointer;
+                    color: rgba(0, 0, 0, 0.8);
+                    position: relative;
+                    top: 1.125rem;
+                }
+
+                .general {
+                    color: #39CDCC;
+                }
+
+                
+            }
+        }
+
+        hr.new {
+            width: 140px;
+            margin-left: 5.5rem;
+            border: 1px solid #39CDCC;
         }
     }
 

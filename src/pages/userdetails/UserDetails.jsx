@@ -56,8 +56,24 @@ const UserDetails = () => {
                                     <p><span className="users-bank">9912345678/Providus Bank</span></p>
                                 </div>
                             </div>
+                            <div className="users-general-details">
+                                <span className="details general">General Details</span>
+                                <span className="details">Documents</span>
+                                <span className="details">Bank Details</span>
+                                <span className="details">Loans</span>
+                                <span className="details">Savings</span>
+                                <span className="details">App and Systems</span>
+                            </div>
+                           
                         </div>
+                        <div >
+                            <hr className="new" />
+
+                        </div>
+                       
                     </section>
+
+                   
                     
                 </div>
 
