@@ -32,6 +32,9 @@ const UserDetails = () => {
                                 <p className="para activate">ACTIVATE USER</p>
                             </div>
                         </div>
+                        <div className="user-detail-container">
+
+                        </div>
                     </section>
                     
                 </div>
