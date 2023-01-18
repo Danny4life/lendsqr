@@ -93,6 +93,65 @@
             box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
             border-radius: 4px;
             margin-left: 3.5rem;
+
+
+            .user-details-items {
+                display: flex;
+                padding: 2rem;
+                align-items: center;
+                gap: 3rem;
+
+                .user-details-name {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.375rem;
+                    line-height: 1.625rem;
+                    color: #213F7D;
+                    margin-bottom: 5px;
+                }
+
+                .users-id{
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 1rem;
+                    color: #545F7D;
+                }
+
+                .users-tier {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 1rem;
+                    color: #545F7D;
+                    margin-bottom: 7px;
+
+                }
+
+                .users-balance {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.375rem;
+                    line-height: 1.625rem;
+                    color: #213F7D;
+
+                }
+
+                .users-bank{
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    line-height: 0.875;
+                    color: #213F7D;
+
+                }
+             
+            }
         }
     }
 

@@ -1,5 +1,8 @@
 import ArrocwIcon from "../../components/icon/ArrowIcon";
 import Avatar from "../../components/icon/AvatarIcon";
+import Hr from "../../components/icon/Hr";
+import Star1Icon from "../../components/icon/Star1Icon";
+import Star2Icon from "../../components/icon/Star2Icon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import "./userdetails.scss"
@@ -34,8 +37,24 @@ const UserDetails = () => {
                             </div>
                         </div>
                         <div className="user-detail-container">
-                            <div>
-                                <Avatar />
+                            <div className="user-details-items">
+                                <div><Avatar /></div>
+                                <div>
+                                    <h4 className="user-details-name">Grace Effiom</h4>
+                                    <p><span className="users-id">LSQF587g90</span></p>
+                                </div>
+                                <span><Hr /></span>
+                                <div>
+                                    <h4 className="users-tier">User's Tier</h4>
+                                    <span><Star1Icon /></span>
+                                    <span><Star2Icon /></span>
+                                    <span><Star2Icon /></span>
+                                </div>
+                                <span><Hr /></span>
+                                <div>
+                                    <h2 className="users-balance">₦200,000,00</h2>
+                                    <p><span className="users-bank">9912345678/Providus Bank</span></p>
+                                </div>
                             </div>
                         </div>
                     </section>
