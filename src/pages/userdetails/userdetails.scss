@@ -15,6 +15,72 @@
     .right {
         flex: 4;
         background: #E5E5E5;
+
+        .users {
+            padding: 3.5rem;
+
+            .userItem {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.19rem;
+                color: #545F7D;
+                margin-left: 1rem;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+         
+
+            .container-detail {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                color: #213F7D;
+               margin-left: 3.5rem;
+                
+            }
+            
+
+            .para-container {
+                display: flex;
+                gap: 0.5rem;
+                margin-right: 2.5rem;
+
+                .para {
+                    display: flex;
+                    align-items: center;justify-content: center;
+                    box-sizing: border-box;
+                    width: 170px;
+                    height: 40px;
+                    border: 1px solid #E4033B;
+                    border-radius: 8px;
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 0.875rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #E4033B;
+                    cursor: pointer;
+
+                }
+
+                .activate {
+                    border: 1px solid #39CDCC;
+                    color: #39CDCC;
+                }
+               
+            }
+
+        }
     }
 
 }

@@ -1,3 +1,4 @@
+import ArrocwIcon from "../../components/icon/ArrowIcon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import "./userdetails.scss"
@@ -18,7 +19,19 @@ const UserDetails = () => {
                 
                 <div className="right">
                     <section>
-                    hello right
+                        <div className="users">
+                            <span>
+                                <ArrocwIcon />
+                            </span>
+                            <span className="userItem">Back to Users</span>
+                        </div>
+                        <div className="container">
+                            <h2 className="container-detail">User Details</h2>
+                            <div className="para-container">
+                                <p className="para">BLACKLIST USER</p>
+                                <p className="para activate">ACTIVATE USER</p>
+                            </div>
+                        </div>
                     </section>
                     
                 </div>
