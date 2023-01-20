@@ -68,9 +68,13 @@ const UserDetails = () => {
                         </div>
                         <div >
                             <hr className="new" />
-
                         </div>
                        
+                    </section>
+                    <section>
+                       <div className="personal-information-card">
+                        <h1>Personal Information</h1>
+                       </div>
                     </section>
 
                    
