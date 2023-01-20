@@ -73,7 +73,7 @@ const UserDetails = () => {
                        
                     </section>
                     <section className="card">
-                       <div className="personal-information-card">
+                       <div className="">
                             <h1 className="card-heading">Personal Information</h1>
                             <div className="card-title-container">
                                 <div className="card-details-wrapper">
@@ -102,6 +102,37 @@ const UserDetails = () => {
                                     <h4 className="card-title">GENDER</h4>
                                     <h3 className="card-details">Female</h3>
                                 </div>          
+                            </div> 
+                            <div className="hr">
+                                <Horrizontal />
+                            </div>
+                       </div>
+
+                       <div className="">
+                            <h1 className="card-heading">Education and Employment</h1>
+                            <div className="card-title-container">
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">LEVEL OF EDUCATION</h4>
+                                    <h3 className="card-details shift">B.Sc</h3>
+                                    <h4 className="card-title">OFFICE EMAIL</h4>
+                                    <h3 className="card-details">grace@lendsqr.com</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">EMPLOYMENT STATUS</h4>
+                                    <h3 className="card-details shift">Employed</h3>
+                                    <h4 className="card-title">MONTHLY INCOME</h4>
+                                    <h3 className="card-details">₦200,000 - ₦400,000</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">SECTOR OF EMPLOYMENT</h4>
+                                    <h3 className="card-details shift">FinTech</h3>
+                                    <h4 className="card-title">LOAN REPAYMENT</h4>
+                                    <h3 className="card-details">₦40,000</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">DURRATION OF EMPLOYMENT</h4>
+                                    <h3 className="card-details">2 years</h3>
+                                </div>        
                             </div> 
                             <div className="hr">
                                 <Horrizontal />
