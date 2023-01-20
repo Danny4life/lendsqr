@@ -71,10 +71,25 @@ const UserDetails = () => {
                         </div>
                        
                     </section>
-                    <section>
+                    <section className="card">
                        <div className="personal-information-card">
-                        <h1>Personal Information</h1>
+                            <h1 className="card-heading">Personal Information</h1>
+                            <div className="card-title-container">
+                                <h4 className="card-title">FULL NAME</h4>
+                                <h4 className="card-title">PHONE NUMBER</h4>
+                                <h4 className="card-title">EMAIL ADDRESS</h4>
+                                <h4 className="card-title">BVN</h4>
+                                <h4 className="card-title">GENDER</h4>
+                            </div>
+                            <div className="card-details-container">
+                                <span className="card-details">Grace Effiom</span>
+                                <span className="card-details">07065634728</span>
+                                <span className="card-details">grace@gmail.com</span>
+                                <span className="card-details">444123456879</span>
+                                <span className="card-details">Female</span>
+                            </div>
                        </div>
+                      
                     </section>
 
                    

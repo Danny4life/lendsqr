@@ -186,7 +186,7 @@
             margin-bottom: 9rem;
         }
 
-        .personal-information-card {
+        .card {
             box-sizing: border-box;
             width: 1055px;
             height: 910px;
@@ -195,6 +195,33 @@
             box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
             border-radius: 4px;
             margin-left: 3.5rem;
+
+            .card-heading {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.118rem;
+            color: #213F7D;
+            padding: 2rem;
+            }
+
+            .card-title-container{
+                display: flex;
+                justify-content: space-around;
+                margin-left: -2.625rem;
+
+                .card-title {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    line-height: 0.875rem;
+                    text-transform: uppercase;
+                    color: #545F7D;
+                }
+
+            }
         }
     }
 
