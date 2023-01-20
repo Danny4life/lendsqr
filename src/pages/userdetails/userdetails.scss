@@ -247,6 +247,38 @@
             .hr {
                 margin-left: 1.5rem;
             }
+
+            .card-title-container-2 {
+                display: flex;
+                margin-left: 2rem;
+                gap: 5rem;
+
+                .card-details-wrapper-2{
+
+                    .card-title-2 {
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 0.75rem;
+                        line-height: 0.875rem;
+                        text-transform: uppercase;
+                        color: #545F7D;
+                        margin-bottom: 5px;
+                    }
+
+                    .card-details-2 {
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.118rem;
+                        color: #545F7D;
+                    }
+
+                }
+                
+                
+            }
         }
     }
 
