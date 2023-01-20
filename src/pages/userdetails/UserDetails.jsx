@@ -160,41 +160,49 @@ const UserDetails = () => {
                             </div>
                        </div>
 
-                       <div className="">
+                       <div className="gaurantor-container">
                             <h1 className="card-heading">Gaurantor</h1>
-                            <div className="card-title-container">
-                                <div className="card-details-wrapper">
-                                    <h4 className="card-title">FULL NAME</h4>
-                                    <h3 className="card-details shift">Grace Effiom</h3>
-                                    <h4 className="card-title">MARITAL STATUS</h4>
-                                    <h3 className="card-details">Single</h3>
+                            <div className="card-title-container-2">
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">FULL NAME</h4>
+                                    <h3 className="card-details-2">Debby Oganna</h3>
                                 </div>
-                                <div className="card-details-wrapper">
-                                    <h4 className="card-title">PHONE NUMBER</h4>
-                                    <h3 className="card-details shift">07065634728</h3>
-                                    <h4 className="card-title">CHILDREN</h4>
-                                    <h3 className="card-details">None</h3>
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">PHONE NUMBER</h4>
+                                    <h3 className="card-details-2">0807365242</h3>
                                 </div>
-                                <div className="card-details-wrapper">
-                                    <h4 className="card-title">EMAIL ADDRESS</h4>
-                                    <h3 className="card-details shift">grace@gmail.com</h3>
-                                    <h4 className="card-title">TYPE OF RESIDENCE</h4>
-                                    <h3 className="card-details">Parent's Apartment</h3>
-                                </div>
-                                <div className="card-details-wrapper">
-                                    <h4 className="card-title">BVN</h4>
-                                    <h3 className="card-details">444123456879</h3>
-                                </div>
-                                <div className="card-details-wrapper">
-                                    <h4 className="card-title">GENDER</h4>
-                                    <h3 className="card-details">Female</h3>
-                                </div>          
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">EMAIL ADDRESS</h4>
+                                    <h3 className="card-details-2">debby@gmail.com</h3>
+                                </div> 
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">RELATIONSHIP</h4>
+                                    <h3 className="card-details-2">Sister</h3>
+                                </div>        
                             </div> 
-                            <div className="hr">
+                            <div className="hr hr-2">
                                 <Horrizontal />
                             </div>
                        </div>
-                      
+
+                       <div className="card-title-container-2">
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">FULL NAME</h4>
+                                    <h3 className="card-details-2">Jane Fred</h3>
+                                </div>
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">PHONE NUMBER</h4>
+                                    <h3 className="card-details-2">0807365242</h3>
+                                </div>
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">EMAIL ADDRESS</h4>
+                                    <h3 className="card-details-2">janny@gmail.com</h3>
+                                </div> 
+                                <div className="card-details-wrapper-2">
+                                    <h4 className="card-title-2">RELATIONSHIP</h4>
+                                    <h3 className="card-details-2">Friend</h3>
+                                </div>        
+                            </div> 
                     </section>     
                     
                 </div>
