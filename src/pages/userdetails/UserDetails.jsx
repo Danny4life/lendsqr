@@ -75,24 +75,30 @@ const UserDetails = () => {
                        <div className="personal-information-card">
                             <h1 className="card-heading">Personal Information</h1>
                             <div className="card-title-container">
-                                <h4 className="card-title">FULL NAME</h4>
-                                <h4 className="card-title">PHONE NUMBER</h4>
-                                <h4 className="card-title">EMAIL ADDRESS</h4>
-                                <h4 className="card-title">BVN</h4>
-                                <h4 className="card-title">GENDER</h4>
-                            </div>
-                            <div className="card-details-container">
-                                <span className="card-details">Grace Effiom</span>
-                                <span className="card-details">07065634728</span>
-                                <span className="card-details">grace@gmail.com</span>
-                                <span className="card-details">444123456879</span>
-                                <span className="card-details">Female</span>
-                            </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">FULL NAME</h4>
+                                    <h3 className="card-details">Grace Effiom</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">PHONE NUMBER</h4>
+                                    <h3 className="card-details">07065634728</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">EMAIL ADDRESS</h4>
+                                    <h3 className="card-details">grace@gmail.com</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">BVN</h4>
+                                    <h3 className="card-details">444123456879</h3>
+                                </div>
+                                <div className="card-details-wrapper">
+                                    <h4 className="card-title">GENDER</h4>
+                                    <h3 className="card-details">Female</h3>
+                                </div>          
+                            </div>     
                        </div>
                       
-                    </section>
-
-                   
+                    </section>     
                     
                 </div>
 
