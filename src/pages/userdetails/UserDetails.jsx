@@ -5,6 +5,7 @@ import Star1Icon from "../../components/icon/Star1Icon";
 import Star2Icon from "../../components/icon/Star2Icon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
+import Horrizontal from "../../svg/Horrizontal";
 import "./userdetails.scss"
 
 const UserDetails = () => {
@@ -77,15 +78,21 @@ const UserDetails = () => {
                             <div className="card-title-container">
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">FULL NAME</h4>
-                                    <h3 className="card-details">Grace Effiom</h3>
+                                    <h3 className="card-details shift">Grace Effiom</h3>
+                                    <h4 className="card-title">MARITAL STATUS</h4>
+                                    <h3 className="card-details">Single</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">PHONE NUMBER</h4>
-                                    <h3 className="card-details">07065634728</h3>
+                                    <h3 className="card-details shift">07065634728</h3>
+                                    <h4 className="card-title">CHILDREN</h4>
+                                    <h3 className="card-details">None</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">EMAIL ADDRESS</h4>
-                                    <h3 className="card-details">grace@gmail.com</h3>
+                                    <h3 className="card-details shift">grace@gmail.com</h3>
+                                    <h4 className="card-title">TYPE OF RESIDENCE</h4>
+                                    <h3 className="card-details">Parent's Apartment</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">BVN</h4>
@@ -95,7 +102,10 @@ const UserDetails = () => {
                                     <h4 className="card-title">GENDER</h4>
                                     <h3 className="card-details">Female</h3>
                                 </div>          
-                            </div>     
+                            </div> 
+                            <div className="hr">
+                                <Horrizontal />
+                            </div>
                        </div>
                       
                     </section>     
