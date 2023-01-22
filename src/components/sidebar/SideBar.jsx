@@ -25,7 +25,8 @@ import AuditIcon from "../icon/AuditIcon";
 const SideBar = () => {
     
     return ( 
-        <aside className="sidebar">
+     <aside className="sidebar">
+         <nav>
             <div className="sidebar-container">
                 <div className="sidebar-item">
                     <div className="icon">
@@ -164,12 +165,10 @@ const SideBar = () => {
                         <AuditIcon />
                     </div>
                     <h4 className="sidebar-text">Audit Logs</h4>
-                </div>
-                
-                
+                </div>           
             </div>
-           
-        </aside>
+        </nav>
+     </aside>
      );
 }
  

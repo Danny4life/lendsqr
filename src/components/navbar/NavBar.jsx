@@ -4,7 +4,6 @@ import SearchIcon from "../icon/SearchIcon";
 import Logo from "../logo/Logo";
 import "./navbar.scss"
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-//import AccountCircle from "@mui/icons-material/AccountCircle";
 
 const NavBar = () => {
     return ( 
@@ -25,7 +24,6 @@ const NavBar = () => {
                     </div>
                     <div className="username">
                         <img className="img1" src={img1} alt="img" />
-                        {/* <AccountCircle className="img1" /> */}
                         <span className="nav-text">John Doe</span>
                         <span><ArrowDropDownIcon /></span>
                     </div>  
