@@ -5,6 +5,7 @@ import Star1Icon from "../../components/icon/Star1Icon";
 import Star2Icon from "../../components/icon/Star2Icon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
+import UserDetailsContainer from "../../components/userDetails/UserDetailsContainer";
 import Horrizontal from "../../svg/Horrizontal";
 import "./userdetails.scss"
 
@@ -37,7 +38,8 @@ const UserDetails = () => {
                                 <p className="para activate">ACTIVATE USER</p>
                             </div>
                         </div>
-                        <div className="user-detail-container">
+                        <UserDetailsContainer avatar={<Avatar />} hr={<Hr />} star={<Star1Icon />} star2={<Star2Icon />} />
+                        {/* <div className="user-detail-container">
                             <div className="user-details-items">
                                 <div><Avatar /></div>
                                 <div>
@@ -66,7 +68,7 @@ const UserDetails = () => {
                                 <span className="details">App and Systems</span>
                             </div>
                            
-                        </div>
+                        </div> */}
                         <div >
                             <hr className="new" />
                         </div>
