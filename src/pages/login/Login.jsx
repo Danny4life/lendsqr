@@ -54,12 +54,14 @@ const Login = () => {
             </section>
             <section className="login-right">
                 <div className="right-container">
-                    <h1 className="welcome">
-                        Welcome!
-                    </h1>
-                    <h4 className="details">
-                        Enter details to login.
-                    </h4>
+                    <header>
+                        <h1 className="welcome">
+                            Welcome!
+                        </h1>
+                        <h4 className="details">
+                            Enter details to login.
+                        </h4>
+                    </header> 
                     <form>
                         {inputs.map((input) => (
                             
@@ -74,8 +76,7 @@ const Login = () => {
                             <button>LOG IN</button>
                         </div>
                     </form>     
-                </div>
-                
+                </div>             
             </section>
         </section>
      );
