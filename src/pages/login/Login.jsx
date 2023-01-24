@@ -8,7 +8,7 @@ import "./login.scss";
 
 const Login = () => {
 
-    const [values, setValues] = useState({
+    const [users, setUsers] = useState({
         id : "",
         email : "",
         password : "",
@@ -17,14 +17,14 @@ const Login = () => {
     const onChnage = (e) => {
         
         // const value = e.target.value;
-        setValues({...values, [e.target.name] : e.target.value});
+        setUsers({...users, [e.target.name] : e.target.value});
     }
 
 
     const saveUser = (e) => {
         e.preventDefault();
-        UserService.saveUser(values).then((response) => {
-            setValues(response);
+        UserService.saveUser(users).then((response) => {
+            setUsers(response);
         })
         .catch((error) => {
             console.log(error);
@@ -59,14 +59,14 @@ const Login = () => {
                             <input 
                             type="text"
                             name="email"
-                            value={values.email} 
+                            value={users.email} 
                             onChange={(e) => onChnage(e)}
                             placeholder="Email" 
                             />
                             <input 
                             type="password" 
                             name="password"
-                            value={values.password}
+                            value={users.password}
                             onChange={(e) => onChnage(e)}
                             placeholder="Password" 
                             />
