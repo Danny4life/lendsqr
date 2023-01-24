@@ -1,42 +1,34 @@
  import { useState } from "react";
-import FormInput from "../../components/formInput/FormInput";
+//import FormInput from "../../components/formInput/FormInput";
 import Logo from "../../components/logo/Logo";
 import img1 from "../../images/login.png";
+import UserService from "../../services/UserService";
 import "./login.scss";
-
-
-const inputs = [
-    {
-        id : 1,
-        name : "email",
-        type : "email",
-        placeholder : "Email",
-        errorMessage : "It should be a valid email address",
-        required : true,
-    },
-
-    {
-        id : 2,
-        name : "password",
-        type : "password",
-        placeholder : "Password",
-        errorMessage : "Password should be 8-20 characters and includes atleast 1 letter, 1 number, and 1 special character",
-        pattern :`^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
-        required: true,
-    },
-]
-
 
 
 const Login = () => {
 
     const [values, setValues] = useState({
+        id : "",
         email : "",
         password : "",
     });
 
     const onChnage = (e) => {
+        
+        // const value = e.target.value;
         setValues({...values, [e.target.name] : e.target.value});
+    }
+
+
+    const saveUser = (e) => {
+        e.preventDefault();
+        UserService.saveUser(values).then((response) => {
+            setValues(response);
+        })
+        .catch((error) => {
+            console.log(error);
+        })
     }
     return ( 
         <section className="login">
@@ -62,18 +54,30 @@ const Login = () => {
                             Enter details to login.
                         </h4>
                     </header> 
-                    <form>
-                        {inputs.map((input) => (
-                            
-                            <FormInput key={input.id} {...input} values={values[input.name]}
-                            onChnage={onChnage}  />
-                        ))}
+                    <form className="form-container">
+                        <div>
+                            <input 
+                            type="text"
+                            name="email"
+                            value={values.email} 
+                            onChange={(e) => onChnage(e)}
+                            placeholder="Email" 
+                            />
+                            <input 
+                            type="password" 
+                            name="password"
+                            value={values.password}
+                            onChange={(e) => onChnage(e)}
+                            placeholder="Password" 
+                            />
+                        </div>
+                        
                         <p className="show-container">
                             <span className="show-item">show</span>
                         </p>
                         <div className="div-container">
                             <span className="password">Forgot Password?</span>
-                            <button>LOG IN</button>
+                            <button onClick={(e) => saveUser(e)}>LOG IN</button>
                         </div>
                     </form>     
                 </div>             
