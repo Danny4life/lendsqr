@@ -161,4 +161,24 @@
         }         
     }
     }
+
+}
+
+
+//mobile sm 320
+@media screen and (max-width:375px){
+
+    .login{
+
+        .login-right{
+            .right-container{
+                .welcome {
+                    color: red;
+                }
+            }
+        }
+
+    }
+    
+
 }
