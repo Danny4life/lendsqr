@@ -1,9 +1,9 @@
  import { useState } from "react";
-//import FormInput from "../../components/formInput/FormInput";
 import Logo from "../../components/logo/Logo";
 import img1 from "../../images/login.png";
 import UserService from "../../services/UserService";
 import "./login.scss";
+
 
 
 const Login = () => {
@@ -21,14 +21,16 @@ const Login = () => {
     }
 
 
-    const saveUser = (e) => {
-        e.preventDefault();
+    const saveUser = () => {
+       // e.preventDefault();
         UserService.saveUser(users).then((response) => {
             setUsers(response);
         })
         .catch((error) => {
             console.log(error);
         })
+
+        setUsers(" ");
     }
     return ( 
         <section className="login">
@@ -54,14 +56,15 @@ const Login = () => {
                             Enter details to login.
                         </h4>
                     </header> 
-                    <form className="form-container">
+                    <form action="/" method="/" className="form-container">
                         <div>
                             <input 
-                            type="text"
+                            type="email"
                             name="email"
                             value={users.email} 
                             onChange={(e) => onChnage(e)}
                             placeholder="Email" 
+                            required
                             />
                             <input 
                             type="password" 
@@ -69,6 +72,7 @@ const Login = () => {
                             value={users.password}
                             onChange={(e) => onChnage(e)}
                             placeholder="Password" 
+                            required
                             />
                         </div>
                         
