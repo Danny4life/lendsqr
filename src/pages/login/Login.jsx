@@ -14,6 +14,7 @@ const Login = () => {
         password : "",
     });
 
+   
     const onChnage = (e) => {
         
         // const value = e.target.value;
@@ -32,6 +33,20 @@ const Login = () => {
 
         setUsers(" ");
     }
+
+    const [type, setType] = useState("password");
+    const [icon, setIcon] = useState(false);
+
+    const handleToggle = () => {
+        if(type === "password"){
+            setIcon(true);
+            setType("text");
+        }else {
+            setIcon(false);
+            setType("password");
+        }
+    }
+
     return ( 
         <section className="login">
             <section className="login-left">
@@ -67,7 +82,7 @@ const Login = () => {
                             required
                             />
                             <input 
-                            type="password" 
+                            type={type} 
                             name="password"
                             value={users.password}
                             onChange={(e) => onChnage(e)}
@@ -77,7 +92,7 @@ const Login = () => {
                         </div>
                         
                         <p className="show-container">
-                            <span className="show-item">show</span>
+                            <span onClick={handleToggle} icon={icon} className="show-password">show</span>
                         </p>
                         <div className="div-container">
                             <span className="password">Forgot Password?</span>
