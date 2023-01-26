@@ -40,7 +40,7 @@ const UserDetails = () => {
                             <h2 className="container-detail">User Details</h2>
                             <div className="para-container">
                                 <p className="para">BLACKLIST USER</p>
-                                <p className="para activate">ACTIVATE USER</p>
+                                <p onClick={() => navigate("/addUser")} className="para activate">ACTIVATE USER</p>
                             </div>
                         </div>
                         <UserDetailsContainer 

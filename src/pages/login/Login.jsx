@@ -28,7 +28,7 @@ const Login = () => {
        e.preventDefault();
         UserService.saveUser(users).then((response) => {
             setUsers(response);
-            navigate("/addUser");
+            navigate("/userDetail");
         })
         .catch((error) => {
             console.log(error);
