@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AddUser from './pages/addUser/AddUser';
 import Dashboard from './pages/dashboard/Dashboard';
 import Login from "./pages/login/Login";
 import UserDetails from './pages/userdetails/UserDetails';
@@ -16,6 +17,7 @@ function App() {
           <Route path="/dashboard" element={ <Dashboard />} />
           <Route path="/userPage" element={ <UserPage />} />
           <Route path="/userDetail" element={ <UserDetails />} />
+          <Route path="/addUser" element={ <AddUser />} />
         </Routes>
       </BrowserRouter>
     
