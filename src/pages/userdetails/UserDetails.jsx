@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import ArrocwIcon from "../../components/icon/ArrowIcon";
 import Avatar from "../../components/icon/AvatarIcon";
 import Hr from "../../components/icon/Hr";
@@ -11,6 +12,9 @@ import Horrizontal from "../../svg/Horrizontal";
 import "./userdetails.scss"
 
 const UserDetails = () => {
+
+
+    const navigate = useNavigate();
     return ( 
         <div className="userdetails">
            <nav>
@@ -27,10 +31,10 @@ const UserDetails = () => {
                 <div className="right">
                     <section>
                         <div className="users">
-                            <span>
+                            <span onClick={() => navigate("/userPage")}>
                                 <ArrocwIcon />
                             </span>
-                            <span className="userItem">Back to Users</span>
+                            <span onClick={() => navigate("/userPage")} className="userItem">Back to Users</span>
                         </div>
                         <div className="container">
                             <h2 className="container-detail">User Details</h2>
