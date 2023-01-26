@@ -165,20 +165,124 @@
 }
 
 
-//mobile sm 320
-@media screen and (max-width:375px){
+//mobile md 375
+// @media screen and (min-width:375px) and (max-width:424px){
+//     .login{
+       
 
-    .login{
+        
+       
 
-        .login-right{
-            .right-container{
-                .welcome {
-                    color: red;
-                }
-            }
-        }
+        
 
-    }
+//         .login-left{
+
+            
+
+//             .left-logo{
+//                 padding: 20px;
+//             }
+            
+
+           
+
+//         }
+
+//         .login-img{
+//             .img1{
+//                display: none;
+//             }
+//         }
+
+//         .login-right{
+           
+            
+           
+           
+           
+
+//             .right-container{
+
+//                 padding: 0;
+//                 margin-left: 0;
+
+//                 .welcome {
+//                     color: blue;
+                    
+//                     font-size: 10px;
+                   
+//                 }
+
+//                 .details {
+//                     font-size: 10px;
+//                 }
+
+//                 .form-container{
+//                     input {
+                        
+//                         width: 150px;
+//                         height: 30px;
+//                         display: block;
+//                     }
+
+//                     .div-container{
+//                         button {
+//                             width: 150px;
+//                             height: 30px;
+        
+//                         }
+
+//                         .password {
+//                             display: block;
+//                         }
+
+//                     }
+
+//                     .show-container{
+//                         display: none;
+
+
+//                         .show-password {
+//                            display: none;
+//                         }
+                       
+
+//                     }
     
+                    
+                   
+//                 }
+//             }
+//         }
 
-}
+//     }
+    
+// }
+
+// //mobile lg 425
+// @media screen and (min-width:425px) and (max-width:767px){
+    
+// }
+
+// //tablet 768
+// @media screen and (min-width:768px) and (max-width:1023px){
+    
+// }
+
+// //Laptop 1024
+// @media screen and (min-width:1024px) and (max-width:1439px){
+    
+// }
+
+// //Laptop L 1440
+// @media screen and (min-width:1440px) and (max-width:2559px){
+    
+// }
+
+// //4K 2560
+// @media screen and (min-width:2560px){
+    
+// }
+
+
+//end Device responsive

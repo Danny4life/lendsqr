@@ -35,14 +35,14 @@ const Login = () => {
     }
 
     const [type, setType] = useState("password");
-    const [icon, setIcon] = useState(false);
+    const [show, setShow] = useState(false);
 
     const handleToggle = () => {
         if(type === "password"){
-            setIcon(true);
+            setShow(true);
             setType("text");
         }else {
-            setIcon(false);
+            setShow(false);
             setType("password");
         }
     }
@@ -92,7 +92,7 @@ const Login = () => {
                         </div>
                         
                         <p className="show-container">
-                            <span onClick={handleToggle} icon={icon} className="show-password">show</span>
+                            <span onClick={handleToggle} icon={show} className="show-password">show</span>
                         </p>
                         <div className="div-container">
                             <span className="password">Forgot Password?</span>
