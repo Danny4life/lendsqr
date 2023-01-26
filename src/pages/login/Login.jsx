@@ -1,4 +1,5 @@
  import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../../components/logo/Logo";
 import img1 from "../../images/login.png";
 import UserService from "../../services/UserService";
@@ -21,11 +22,13 @@ const Login = () => {
         setUsers({...users, [e.target.name] : e.target.value});
     }
 
+    const navigate = useNavigate()
 
-    const saveUser = () => {
-       // e.preventDefault();
+    const saveUser = (e) => {
+       e.preventDefault();
         UserService.saveUser(users).then((response) => {
             setUsers(response);
+            navigate("/addUser");
         })
         .catch((error) => {
             console.log(error);
