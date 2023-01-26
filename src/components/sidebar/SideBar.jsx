@@ -21,9 +21,12 @@ import ReportIccon from "../icon/ReportIcon";
 import PreferenceIcon from "../icon/PreferenceIcon";
 import PricingIcon from "../icon/PricingIcon";
 import AuditIcon from "../icon/AuditIcon";
+import { useNavigate } from "react-router-dom";
 
 const SideBar = () => {
     
+
+    const navigate = useNavigate();
     return ( 
      <aside className="sidebar">
          <nav>
@@ -48,7 +51,7 @@ const SideBar = () => {
                     <div className="icon">
                         <UserIcon />
                     </div>
-                    <h4 className="sidebar-text">Users</h4>
+                    <h4 onClick={() => navigate("/userDetail")} className="sidebar-text">Users</h4>
                 </div>
                 <div className="sidebar-item">
                     <div className="icon">
