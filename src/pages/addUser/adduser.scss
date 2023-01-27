@@ -16,6 +16,17 @@
         .right {
             flex: 4;
             background: #E5E5E5;
+
+            .card {
+                box-sizing: border-box;
+                width: 1055px;
+                height: 910px;
+                background: #FFFFFF;
+                border: 1px solid rgba(33, 63, 125, 0.06);
+                box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+                border-radius: 4px;
+                margin-left: 3.5rem;
+            }
         }
     }
 }

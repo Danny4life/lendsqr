@@ -20,9 +20,15 @@ const Login = () => {
         
         // const value = e.target.value;
         setUsers({...users, [e.target.name] : e.target.value});
+
+        // setEmail(e.target.value);
+
+        // setPassword(e.target.value);
     }
 
     const navigate = useNavigate()
+
+    
 
     const saveUser = (e) => {
        e.preventDefault();
@@ -54,7 +60,16 @@ const Login = () => {
 
 
 
+    // const [email, setEmail] = useState("");
+    // const [password, setPassword] = useState("");
+    // const [error, setError] = useState(false);
+
     
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+
+    //     navigate("/userDetail");
+    // }
 
     return ( 
         <section className="login">
@@ -80,24 +95,33 @@ const Login = () => {
                             Enter details to login.
                         </h4>
                     </header> 
-                    <form action="/" method="/" className="form-container">
+                    <form action="/" method="/" className="form-container" onSubmit={saveUser}>
                         <div>
-                            <input 
-                            type="email"
-                            name="email"
-                            value={users.email} 
-                            onChange={(e) => onChnage(e)}
-                            placeholder="Email" 
-                            required
-                            />
-                            <input 
-                            type={type} 
-                            name="password"
-                            value={users.password}
-                            onChange={(e) => onChnage(e)}
-                            placeholder="Password" 
-                            required
-                            />
+                            <div>
+                                <input 
+                                type="email"
+                                name="email"
+                                value={users.email} 
+                                onChange={(e) => onChnage(e)}
+                                placeholder="Email" 
+                                required
+                                />
+                                {/* <p>Email can't be empty</p> */}
+                            </div>
+                            <div>
+                                <input 
+                                type={type} 
+                                name="password"
+                                value={users.password}
+                                onChange={(e) => onChnage(e)}
+                                placeholder="Password" 
+                                required
+                                minlength="6"
+                                />
+                                 {/* <p>Password can't be empty</p> */}
+                            </div>
+                           
+                            
                         </div>
                         
                         <p className="show-container">
