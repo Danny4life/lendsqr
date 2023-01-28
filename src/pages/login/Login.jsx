@@ -35,6 +35,7 @@ const Login = () => {
         UserService.saveUser(users).then((response) => {
             setUsers(response);
             navigate("/userDetail");
+            //console.log(response)
         })
         .catch((error) => {
             console.log(error);

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
@@ -20,8 +21,8 @@ const AddUser = () => {
 
     const handleChange = (e) => {
 
-        const value = e.target.value;
-        setUserDetails({ ...userDetails, [e.target.name] : value });
+       // const value = e.target.value;
+        setUserDetails({...userDetails, [e.target.name] : e.target.value});
 
     }
 
@@ -33,8 +34,9 @@ const AddUser = () => {
         })
         .catch((error) => {
             console.log(error);
-        })
+      })  
 
+      setUserDetails(" ");
     }
     return ( 
         <div className="addUser">
@@ -55,14 +57,14 @@ const AddUser = () => {
 
                     <h2 className="hero-header">Enter Your Details</h2>
                         <div className="card">
-                            <form action="" method="">
+                            <form action="" method="" onSubmit={saveUserDetails}>
                                 <fieldset>
                                     <legend>Personal Information</legend>
                                     <div className="form-control-1">
                                         <label htmlFor="fullName">Full Name</label>
                                         <input 
                                         type="text" 
-                                        id="fullName" 
+                                        // id="fullName" 
                                         name="fullName" 
                                         value={userDetails.fullName}
                                         onChange={(e) => handleChange(e)}
@@ -71,7 +73,7 @@ const AddUser = () => {
                                         <label htmlFor="phoneNumber">phone Number</label>
                                         <input 
                                         type="number" 
-                                        id="phoneNumber" 
+                                        // id="phoneNumber" 
                                         name="phoneNumber" 
                                         value={userDetails.phoneNumber}
                                         onChange={(e) => handleChange(e)}
@@ -80,7 +82,7 @@ const AddUser = () => {
                                         <label htmlFor="email">Email</label>
                                         <input 
                                         type="email" 
-                                        id="email" 
+                                        // id="email" 
                                         name="email"
                                         value={userDetails.email}
                                         onChange={(e) => handleChange(e)} 
@@ -92,7 +94,7 @@ const AddUser = () => {
                                         <input 
                                         className="bvn-input" 
                                         type="number" 
-                                        id="bvn" 
+                                        // id="bvn" 
                                         name="bvn"
                                         value={userDetails.bvn}
                                         onChange={(e) => handleChange(e)}
@@ -102,7 +104,7 @@ const AddUser = () => {
                                         <input 
                                         className="gender" 
                                         type="text" 
-                                        id="gender" 
+                                        // id="gender" 
                                         name="gender"
                                         value={userDetails.gender}
                                         onChange={(e) => handleChange(e)} />
@@ -111,7 +113,7 @@ const AddUser = () => {
                                         <input 
                                         className="status" 
                                         type="text" 
-                                        id="status" 
+                                        // id="status" 
                                         name="status" 
                                         value={userDetails.status}
                                         onChange={(e) => handleChange(e)} />
@@ -122,7 +124,7 @@ const AddUser = () => {
                                         <input 
                                         className="child-input" 
                                         type="text" 
-                                        id="child" 
+                                        // id="child" 
                                         name="child"
                                         value={userDetails.child}
                                         onChange={(e) => handleChange(e)} />
@@ -130,7 +132,7 @@ const AddUser = () => {
                                         <label htmlFor="residece">Type of Residence</label>
                                         <input 
                                         type="text" 
-                                        id="residence" 
+                                        // id="residence" 
                                         name="residence" 
                                         value={userDetails.residence}
                                         onChange={(e) => handleChange(e)}
@@ -140,7 +142,7 @@ const AddUser = () => {
                                     <div className="submit">
                                         <button 
                                          className="save-btn"
-                                         onClick={(e) => saveUserDetails(e)}
+                                         onSubmit={(e) => saveUserDetails(e)}
                                          >
                                             Save
                                         </button>
