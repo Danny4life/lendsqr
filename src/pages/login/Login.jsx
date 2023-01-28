@@ -129,7 +129,7 @@ const Login = () => {
                         </p>
                         <div className="div-container">
                             <span className="password">Forgot Password?</span>
-                            <button onClick={(e) => saveUser(e)}>LOG IN</button>
+                            <button onSubmit={(e) => saveUser(e)}>LOG IN</button>
                         </div>
                     </form>     
                 </div>             
