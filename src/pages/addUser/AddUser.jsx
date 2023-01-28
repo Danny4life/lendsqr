@@ -56,7 +56,8 @@ const AddUser = () => {
                                     </div>
 
                                     <div className="submit">
-                                         <input className="submit-input" type="submit" value="submit" />
+                                         <button className="save-btn">Save</button>
+                                         <button className="clear-btn">Clear</button>
                                     </div>
 
 
