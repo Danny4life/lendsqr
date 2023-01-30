@@ -1,5 +1,6 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import UserService from "../../services/UserService";
@@ -26,11 +27,30 @@ const AddUser = () => {
 
     }
 
+
+    useEffect(() => {
+        const fetchData = async (id) => {
+            try {
+                const response = await UserService.getUserInformationById(id);
+                setUserDetails(response.data);
+            }catch(error){
+                console.log(error);
+
+            }
+        }
+
+        fetchData()
+    }, []);
+
+    const navigate = useNavigate();
+
     const saveUserDetails = (e) => {
         e.preventDefault();
         UserService.saveUserDetails(userDetails).then((response) => {
             setUserDetails(response);
             // console.log(response);
+            navigate("/userDetail");
+
         })
         .catch((error) => {
             console.log(error);
@@ -86,7 +106,7 @@ const AddUser = () => {
                                         onChange={(e) => handleChange(e)}
                                         required />
 
-                                        <label htmlFor="phoneNumber">phone Number</label>
+                                        <label htmlFor="phoneNumber">Phone Number</label>
                                         <input 
                                         type="number" 
                                         name="phoneNumber" 
@@ -124,6 +144,14 @@ const AddUser = () => {
                                         value={userDetails.gender}
                                         id="gender" 
                                         onChange={(e) => handleChange(e)} />
+
+                                        {/* <label htmlFor="gender">Gender</label>
+                                        <select name="gender" id="gender" value={userDetails.gender} onChange={(e) => handleChange(e)}>
+                                           
+                                            <option>MALE</option>
+                                            <option>FEMALE</option>
+
+                                        </select> */}
 
                                         <label className="label-status" htmlFor="martitaStatus">Marital Status</label>
                                         <input 
@@ -168,11 +196,7 @@ const AddUser = () => {
                                          >
                                             Clear
                                         </button>
-                                    </div>
-
-
-                                   
-                                                        
+                                    </div>              
                                 </fieldset>
                             </form>
                         </div>              
