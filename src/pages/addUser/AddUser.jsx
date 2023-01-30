@@ -30,13 +30,29 @@ const AddUser = () => {
         e.preventDefault();
         UserService.saveUserDetails(userDetails).then((response) => {
             setUserDetails(response);
-            console.log(response);
+            // console.log(response);
         })
         .catch((error) => {
             console.log(error);
       })  
 
-      setUserDetails(" ");
+    //   setUserDetails(" ");
+    }
+
+    const reset = (e) => {
+        e.preventDefault();
+
+        setUserDetails({
+            id : "",
+            fullName : "",
+            phoneNumber : "",
+            emailAdd : "",
+            bvn : "",
+            type_of_residence : "",
+            gender : "",
+            maritalStatus : "",
+            children : "",
+        })
     }
     return ( 
         <div className="addUser">
@@ -146,7 +162,12 @@ const AddUser = () => {
                                          >
                                             Save
                                         </button>
-                                         <button className="clear-btn">Clear</button>
+                                         <button 
+                                         className="clear-btn"
+                                         onClick={(e) => reset(e)}
+                                         >
+                                            Clear
+                                        </button>
                                     </div>
 
 
