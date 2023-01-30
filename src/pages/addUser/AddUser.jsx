@@ -11,12 +11,12 @@ const AddUser = () => {
         id : "",
         fullName : "",
         phoneNumber : "",
-        email : "",
+        emailAdd : "",
         bvn : "",
+        type_of_residence : "",
         gender : "",
-        status : "",
-        child : "",
-        residence : "",
+        maritalStatus : "",
+        children : "",
     });
 
     const handleChange = (e) => {
@@ -64,27 +64,27 @@ const AddUser = () => {
                                         <label htmlFor="fullName">Full Name</label>
                                         <input 
                                         type="text" 
-                                        // id="fullName" 
                                         name="fullName" 
                                         value={userDetails.fullName}
+                                        id="fullName" 
                                         onChange={(e) => handleChange(e)}
                                         required />
 
                                         <label htmlFor="phoneNumber">phone Number</label>
                                         <input 
                                         type="number" 
-                                        // id="phoneNumber" 
                                         name="phoneNumber" 
                                         value={userDetails.phoneNumber}
+                                        id="phoneNumber" 
                                         onChange={(e) => handleChange(e)}
                                         required />
 
-                                        <label htmlFor="email">Email</label>
+                                        <label htmlFor="emailAdd">Email</label>
                                         <input 
-                                        type="email" 
-                                        // id="email" 
-                                        name="email"
-                                        value={userDetails.email}
+                                        type="email"  
+                                        name="emailAdd"
+                                        value={userDetails.emailAdd}
+                                        id="emailAdd" 
                                         onChange={(e) => handleChange(e)} 
                                         required />
                                     </div>
@@ -94,47 +94,47 @@ const AddUser = () => {
                                         <input 
                                         className="bvn-input" 
                                         type="number" 
-                                        // id="bvn" 
                                         name="bvn"
                                         value={userDetails.bvn}
+                                        id="bvn" 
                                         onChange={(e) => handleChange(e)}
                                          required />
 
                                         <label htmlFor="gender">Gender</label>
                                         <input 
                                         className="gender" 
-                                        type="text" 
-                                        // id="gender" 
+                                        type="text"
                                         name="gender"
                                         value={userDetails.gender}
+                                        id="gender" 
                                         onChange={(e) => handleChange(e)} />
 
-                                        <label className="label-status" htmlFor="status">Marital Status</label>
+                                        <label className="label-status" htmlFor="martitaStatus">Marital Status</label>
                                         <input 
                                         className="status" 
                                         type="text" 
-                                        // id="status" 
-                                        name="status" 
-                                        value={userDetails.status}
+                                        name="maritalStatus" 
+                                        value={userDetails.maritalStatus}
+                                         id="maritalStatus" 
                                         onChange={(e) => handleChange(e)} />
                                     </div>
 
                                     <div className="form-control-3">
-                                        <label htmlFor="child">Children</label>
+                                        <label htmlFor="children">Children</label>
                                         <input 
                                         className="child-input" 
                                         type="text" 
-                                        // id="child" 
-                                        name="child"
-                                        value={userDetails.child}
+                                        name="children"
+                                        value={userDetails.children}
+                                        id="children" 
                                         onChange={(e) => handleChange(e)} />
 
-                                        <label htmlFor="residece">Type of Residence</label>
+                                        <label htmlFor="type_of_residece">Type of Residence</label>
                                         <input 
                                         type="text" 
-                                        // id="residence" 
-                                        name="residence" 
-                                        value={userDetails.residence}
+                                        name="type_of_residence" 
+                                        value={userDetails.type_of_residence}
+                                        id="type_of_residence" 
                                         onChange={(e) => handleChange(e)}
                                         required />
                                     </div>
