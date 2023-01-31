@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import UserService from "../../services/UserService";
@@ -8,6 +8,7 @@ import "./adduser.scss";
 
 const AddUser = () => {
 
+    const {id} = useParams();
     const [userDetails, setUserDetails] = useState({
         id : "",
         fullName : "",
@@ -29,7 +30,7 @@ const AddUser = () => {
 
 
     useEffect(() => {
-        const fetchData = async (id) => {
+        const fetchData = async () => {
             try {
                 const response = await UserService.getUserInformationById(id);
                 setUserDetails(response.data);
@@ -40,7 +41,14 @@ const AddUser = () => {
         }
 
         fetchData()
-    }, []);
+    }, [id]);
+
+
+    // const updateUser = (e) => {
+
+    // }
+
+
 
     const navigate = useNavigate();
 

@@ -1,3 +1,4 @@
+//import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ArrocwIcon from "../../components/icon/ArrowIcon";
 import Avatar from "../../components/icon/AvatarIcon";
@@ -7,11 +8,28 @@ import Star2Icon from "../../components/icon/Star2Icon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import UserDetailsContainer from "../../components/userDetails/UserDetailsContainer";
+//import UserService from "../../services/UserService";
 //import UsersInformation from "../../components/userDetails/UsersInformation";
 //import Horrizontal from "../../svg/Horrizontal";
 import "./userdetails.scss"
 
 const UserDetails = () => {
+
+    // const [users, setUsers] = useState(null);
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+
+    //         try {
+    //             const response = await UserService.getUserInformation();
+    //             setUsers(response.data);
+    //         }catch(error){
+    //             console.log(error);
+    //         }
+    //     };
+
+    //     fetchData();
+    // }, []);
 
 
     const navigate = useNavigate();
@@ -88,11 +106,12 @@ const UserDetails = () => {
                                 </div>          
                             </div> 
                                     <div className="hr">
-                                        {/* {horrizontal} */}
+                                        
                                         <hr />   
                                     </div>
-                        </div>
+                        </div> 
 
+                           
                         <div className="">
                             <h1 className="card-heading">Education and Employment</h1>
                             <div className="card-title-container">
@@ -120,7 +139,7 @@ const UserDetails = () => {
                                 </div>        
                             </div> 
                                 <div className="hr">
-                                    {/* {horrizontal} */}
+                                   
                                     <hr />
                                 </div>
                          </div>
@@ -142,7 +161,7 @@ const UserDetails = () => {
                                 </div>        
                             </div> 
                                 <div className="hr">
-                                    {/* {horrizontal} */}
+                                    
                                     <hr />
                                 </div>
                         </div>
@@ -168,7 +187,7 @@ const UserDetails = () => {
                                 </div>        
                             </div> 
                                 <div className="hr hr-2">
-                                    {/* {horrizontal} */}
+                                    
                                     <hr />
                                 </div>
                         </div>

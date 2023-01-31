@@ -11,6 +11,9 @@ class UserService {
          return axios.post(USER_API_BASE_URL, user);
     }
 
+    getUserInformation(){
+        return axios.get(USERDETAILS_API_BASE_URL);
+    }
     saveUserDetails(userDetails){
         return axios.post(USERDETAILS_API_BASE_URL, userDetails);
     }

@@ -44,7 +44,7 @@ const SideBar = () => {
                     <div className="icon">
                         <DashboardIcon />
                     </div>
-                    <h4 className="sidebar-text">Dashboard</h4>
+                    <h4 onClick={() => navigate("/dashboard")} className="sidebar-text">Dashboard</h4>
                 </div>
                 <h4 className="title">CUSTOMERS</h4>
                 <div className="sidebar-item users">

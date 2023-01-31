@@ -210,13 +210,16 @@
 
             .card-title-container{
                 display: flex;
-                justify-content: space-around;
-                margin-left: -2.625rem;
+                justify-content: space-evenly;
+                margin-left: -4.875rem;
+
+               
 
                 .card-details-wrapper {
 
-                    margin-left: 0.875rem;
+                    // margin-left: 0.875rem;
                     margin-bottom: 15px;
+                   
 
 
                     .card-title {
@@ -228,6 +231,9 @@
                         text-transform: uppercase;
                         color: #545F7D;
                         margin-bottom: 5px;
+                        // margin-left: 2rem;
+                        
+                       
                     }
 
                     .card-details {
@@ -290,7 +296,10 @@
                     margin-bottom: 6rem;
                 }
             }
+
+            
         }
+
     }
 
 }
