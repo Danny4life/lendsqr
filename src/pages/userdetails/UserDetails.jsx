@@ -15,24 +15,6 @@ import "./userdetails.scss"
 
 const UserDetails = () => {
 
-    // const [users, setUsers] = useState(null);
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-
-    //         try {
-    //             const response = await UserService.getUserInformation();
-    //             setUsers(response.data);
-    //         }catch(error){
-    //             console.log(error);
-    //         }
-    //     };
-
-    //     fetchData();
-    // }, []);
-
-
-
     const {id} = useParams();
     const [userDetails, setUserDetails] = useState({
         id : "",
@@ -68,20 +50,6 @@ const UserDetails = () => {
 
         navigate(`/addUser/${id}`);
     }
-
-
-    // const updateUser = (e) => {
-
-    //     e.preventDefault();
-    //     UserService.updateUser(userDetails, id)
-    //     .then((response) => {
-    //         navigate("/userDetail");
-    //     })
-    //     .catch((error) => {
-    //         console.log(error);
-    //     });
-
-    // };
 
     const navigate = useNavigate();
     return ( 
