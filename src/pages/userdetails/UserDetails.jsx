@@ -1,5 +1,5 @@
-//import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import ArrocwIcon from "../../components/icon/ArrowIcon";
 import Avatar from "../../components/icon/AvatarIcon";
 import Hr from "../../components/icon/Hr";
@@ -8,7 +8,7 @@ import Star2Icon from "../../components/icon/Star2Icon";
 import NavBar from "../../components/navbar/NavBar";
 import SideBar from "../../components/sidebar/SideBar";
 import UserDetailsContainer from "../../components/userDetails/UserDetailsContainer";
-//import UserService from "../../services/UserService";
+import UserService from "../../services/UserService";
 //import UsersInformation from "../../components/userDetails/UsersInformation";
 //import Horrizontal from "../../svg/Horrizontal";
 import "./userdetails.scss"
@@ -31,6 +31,57 @@ const UserDetails = () => {
     //     fetchData();
     // }, []);
 
+
+
+    const {id} = useParams();
+    const [userDetails, setUserDetails] = useState({
+        id : "",
+        fullName : "",
+        phoneNumber : "",
+        emailAdd : "",
+        bvn : "",
+        type_of_residence : "",
+        gender : "",
+        maritalStatus : "",
+        children : "",
+    });
+
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await UserService.getUserInformationById(id);
+                setUserDetails(response.data);
+            }catch(error){
+                console.log(error);
+
+            }
+        }
+
+        fetchData()
+    }, [id]);
+
+
+    const editUser = (e) => {
+        e.preventDefault();
+
+        navigate(`/addUser/${id}`);
+    }
+
+
+    // const updateUser = (e) => {
+
+    //     e.preventDefault();
+    //     UserService.updateUser(userDetails, id)
+    //     .then((response) => {
+    //         navigate("/userDetail");
+    //     })
+    //     .catch((error) => {
+    //         console.log(error);
+    //     });
+
+    // };
 
     const navigate = useNavigate();
     return ( 
@@ -58,7 +109,7 @@ const UserDetails = () => {
                             <h2 className="container-detail">User Details</h2>
                             <div className="para-container">
                                 <p className="para">BLACKLIST USER</p>
-                                <p onClick={() => navigate("/addUser")} className="para activate">ACTIVATE USER</p>
+                                <p  onClick={(e, id) => editUser(e, userDetails.id)} className="para activate">ACTIVATE USER</p>
                             </div>
                         </div>
                         <UserDetailsContainer 
@@ -80,29 +131,29 @@ const UserDetails = () => {
                             <div className="card-title-container">
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">FULL NAME</h4>
-                                    <h3 className="card-details shift">Grace Effiom</h3>
+                                    <h3 className="card-details shift">{userDetails.fullName}</h3>
                                     <h4 className="card-title">MARITAL STATUS</h4>
-                                    <h3 className="card-details">Single</h3>
+                                    <h3 className="card-details">{userDetails.maritalStatus}</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">PHONE NUMBER</h4>
-                                    <h3 className="card-details shift">07065634728</h3>
+                                    <h3 className="card-details shift">{userDetails.phoneNumber}</h3>
                                     <h4 className="card-title">CHILDREN</h4>
-                                    <h3 className="card-details">None</h3>
+                                    <h3 className="card-details">{userDetails.children}</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">EMAIL ADDRESS</h4>
-                                    <h3 className="card-details shift">grace@gmail.com</h3>
+                                    <h3 className="card-details shift">{userDetails.emailAdd}</h3>
                                     <h4 className="card-title">TYPE OF RESIDENCE</h4>
-                                    <h3 className="card-details">Parent's Apartment</h3>
+                                    <h3 className="card-details">{userDetails.type_of_residence}</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">BVN</h4>
-                                    <h3 className="card-details">444123456879</h3>
+                                    <h3 className="card-details">{userDetails.bvn}</h3>
                                 </div>
                                 <div className="card-details-wrapper">
                                     <h4 className="card-title">GENDER</h4>
-                                    <h3 className="card-details">Female</h3>
+                                    <h3 className="card-details">{userDetails.gender}</h3>
                                 </div>          
                             </div> 
                                     <div className="hr">

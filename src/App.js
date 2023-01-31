@@ -17,7 +17,7 @@ function App() {
           <Route path="/dashboard" element={ <Dashboard />} />
           <Route path="/userPage" element={ <UserPage />} />
           <Route path="/userDetail" element={ <UserDetails />} />
-          <Route path="/addUser" element={ <AddUser />} />
+          <Route path="/addUser/:id" element={ <AddUser />} />
         </Routes>
       </BrowserRouter>
     
